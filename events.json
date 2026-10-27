@@ -550,6 +550,16 @@
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
       "note": "Evento de 13 a 15 de novembro."
+    },
+    {
+      "date": "2026-11-01",
+      "time": "23:00",
+      "title": "Halloween — Festa à Fantasia (Open Bar)",
+      "venue": "UNDR Florianópolis",
+      "category": "Festas",
+      "source": "https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/",
+      "region": "Centro",
+      "note": "Data obtida na página individual do evento, na seção Detalhes."
     }
   ]
 }
