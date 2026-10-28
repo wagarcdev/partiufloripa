@@ -22,3 +22,6 @@
 
 **ADR-010 Calor mesmo com evento único — aceito (2026-10-28).** Manter heatmap em toda noite com eventos mapeados, inclusive uma única região, usando halo pequeno e intensidade proporcional, com marcador clicável. Não representar presença de pessoas.
 
+
+**ADR-011 Seletor de data nativo — aceito (2026-10-28).** Substituir lista de datas por input date nativo, usando calendário do navegador/Android. Permitir dias sem eventos e exibir estado vazio; restringir ao intervalo das noites conhecidas. Não depende de biblioteca externa.
+
