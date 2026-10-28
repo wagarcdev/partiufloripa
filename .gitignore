@@ -1,0 +1,8 @@
+.chrome-*/
+*.log
+*-temp.json
+inspect.js
+region-preview.png
+map-debug.png
+tile-test.png
+tile-headers.txt
