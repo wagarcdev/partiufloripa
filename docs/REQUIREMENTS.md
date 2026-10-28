@@ -26,3 +26,6 @@ Status: protÃ³tipo tÃ©cnico, nÃ£o catÃ¡logo auditado.
 
 **RF-16 — Identificação visual da categoria (implementado; QA mobile pendente):** todo card, com ou sem imagem, exibe ícone e nome legível da categoria; filtro de categoria usa os mesmos símbolos. Ícones não substituem texto.
 
+
+**RF-17 — Fallback visual em cards (implementado; QA visual pendente):** sempre exibir capa, priorizando imagem do evento, depois imagem da casa com identificação explícita, senão arte de categoria; preservar legibilidade, acessibilidade e evitar foto genérica enganosa.
+

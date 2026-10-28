@@ -28,3 +28,6 @@
 
 **ADR-012 Categorias por experiência — aceito (2026-10-28).** Baladas = DJs, pista, festas noturnas; Dança = espetáculo coreográfico; Shows = música ao vivo; Humor, Teatro, Cinema, Festivais culturais, Feiras e Cultura permanecem distintos. Folianópolis e set de DJ Blancah passam a Baladas para atender intenção de descoberta noturna. Cards exibem emoji + texto independentemente de cartaz; filtros também exibem emoji. Revisão editorial futura pode reclassificar eventos com evidência.
 
+
+**ADR-013 Fallback visual por casa — aceito (2026-10-28).** Hierarquia de capa: cartaz do evento quando disponível, depois identidade visual da casa já existente no repositório, depois arte neutra da categoria com emoji. No fallback da casa, exibir aviso 'Imagem da casa' para não apresentar logotipo como cartaz específico. O logo local do Bar do Espartano é reutilizado nas ocorrências sem cartaz. Outros locais continuam com arte de categoria até se obter imagem de casa adequada e autorização de uso. Não confundir reutilização técnica com licença comercial.
+
