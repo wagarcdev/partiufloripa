@@ -15,3 +15,7 @@
 **ADR-007 Harness versionado — aceito.** AGENTS.md conciso, docs por tema, Git como fonte da verdade deste projeto.
 
 **Novo ADR:** título, data, contexto, decisão, alternativas, consequências, evidência e status. Não reescrever decisões históricas silenciosamente.
+
+**ADR-008 Mapa pronto e densidade mínima — aceito (2026-10-28).** Após reprovação visual em Android, substituir contornos municipais e rótulos manuais pelo Esri World Light Gray Canvas. Se houver menos de 3 regiões com eventos na data, exibir apenas marcadores, sem simular calor. Rever condições de uso do provedor antes de monetização.
+
+**ADR-009 Imagens não específicas — aceito (2026-10-28).** Remover das 13 ocorrências os dois arquivos idênticos que exibem apenas a marca da casa, não cartazes específicos. Preservar arquivos para análise, sem considerá-los licenciados.

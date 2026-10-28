@@ -31,3 +31,11 @@
 - [ ] Revisar obrigações fiscais/contratuais conforme modelo adotado
 
 **Futuro condicional:** app e social apenas após tração web. Sem datas artificiais.
+
+## Resultado de QA/auditoria em 2026-10-28
+- [x] Substituir mapa esquemático defeituoso por base pronta e validar captura em Chrome mobile emulado.
+- [x] Inventariar 56 eventos, 14 arquivos de imagem e 34 URLs distintas; registrar pendências.
+- [x] Remover 13 associações de logo genérico como cartaz de evento.
+- [ ] Revisar editorialmente os 56 registros e as 12 imagens ainda usadas.
+- [ ] Validar direitos de imagem, horários ausentes, regiões genéricas e condições de uso da base Esri.
+- [ ] Validar no Android físico, além da emulação.

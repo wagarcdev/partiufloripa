@@ -11,3 +11,6 @@
 **Contrato proposto, ainda NÃO implementado:** `id` estável; `sourceUrl`, `lastVerifiedAt`, `status` (draft/verified/cancelled/expired), `collectionMethod`, `scrapingPermission`, `imageSourceUrl`, `imageLicense`, `imagePermissionEvidence`, `venueId`, coordenadas verificadas; `affiliateUrl` somente em fase comercial.
 
 **Dívidas:** JS/CSS/HTML monolíticos; testes UI ausentes; dados sem proveniência estruturada; `Object.groupBy` requer teste em Android antigo; CDN externo; sem pipeline de ingestão. Preferir alterações reversíveis e sem custo fixo.
+
+## Atualização cartográfica — 2026-10-28
+A camada ativa é **Esri World Light Gray Canvas** (tiles externos); o GeoJSON local permanece no repositório, mas não é usado no mapa atual. Rótulos manuais removidos. Para menos de 3 regiões, o mapa mostra somente marcadores; o heatmap é usado a partir de 3 regiões, ainda baseado em posições regionais aproximadas. Verificar limites/licença do serviço Esri antes de tráfego comercial.

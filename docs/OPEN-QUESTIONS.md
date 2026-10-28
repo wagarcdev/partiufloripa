@@ -18,3 +18,10 @@
 ## Achado da primeira validaÁ„o (2026-10-28)
 O script detectou 16 erros em 8 eventos sem hor·rio (Ìndices 26, 27, 28, 36, 37, 38, 44, 45) e 31 alertas de regi„o genÈrica FlorianÛpolis. N„o inventar hor·rios; conferir fontes oficiais antes de corrigir. O verificador retorna falha atÈ resoluÁ„o.
 
+
+## Achados da auditoria automatizada ‚Äî 2026-10-28
+- [Invent√°rio completo de 56 eventos e 14 arquivos de imagem](../reports/CATALOG-AUDIT.md).
+- [Checagem t√©cnica de 34 URLs distintas](../reports/LINK-CHECK.md): todas responderam HTTP 200, **sem comprova√ß√£o de correspond√™ncia editorial**.
+- Oito eventos sem hor√°rio; 31 com regi√£o gen√©rica; 12 eventos ainda usam imagem local cuja licen√ßa e correspond√™ncia precisam de verifica√ß√£o.
+- Dois arquivos de logo da casa s√£o binariamente id√™nticos e estavam associados a 13 eventos distintos. As 13 associa√ß√µes foram removidas; os arquivos continuam dispon√≠veis para eventual revis√£o.
+- Auditoria individual de cartazes, hor√°rios, direitos e dados da fonte **n√£o conclu√≠da**.

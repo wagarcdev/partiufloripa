@@ -23,3 +23,6 @@
 **Pendência crítica:** auditar 56 eventos e 14 imagens locais, conferindo origem, evento correspondente, horário, link e direito de reprodução. Não declarar operação plenamente regular sem essa análise.
 
 **Privacidade:** definir o que é efetivamente coletado antes de publicar política. Analytics e anúncios futuros podem introduzir cookies/identificadores e novas obrigações.
+
+## Auditoria preliminar — 2026-10-28
+Ver [inventário de eventos/imagens](../reports/CATALOG-AUDIT.md) e [checagem técnica de URLs](../reports/LINK-CHECK.md). Resposta HTTP 200 não confirma evento, data ou licença. Dois arquivos binariamente idênticos de logo do Espartano foram removidos dos 13 cards onde eram usados como se fossem cartazes de eventos. As demais imagens continuam pendentes de auditoria de direitos e correspondência.

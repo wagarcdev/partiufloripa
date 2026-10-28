@@ -16,3 +16,6 @@
 **Fluxo editorial futuro (não implementado):** discovered → pending_review → verified → published → expired/cancelled.
 
 **Regras de operação:** não commitar perfis de Chrome, screenshots de debug, segredos ou scripts temporários; não presumir deploy concluído enquanto workflow estiver em execução. Registrar decisões em `docs/DECISIONS.md`.
+
+## Falha de QA e correção — 2026-10-28
+Um mapa que carregava corretamente foi publicado com rótulos sobrepostos e calor desproporcional a um evento. **Carregamento não equivale a aprovação visual.** Toda mudança cartográfica exige captura em viewport móvel realista, tema claro/escuro, verificação de legibilidade, ausência de sobreposição e adequação semântica do heatmap. Evidência inicial: [captura do mapa em Chrome mobile emulado](map-qa-mobile.png). A captura é de emulação, não teste em aparelho físico.
