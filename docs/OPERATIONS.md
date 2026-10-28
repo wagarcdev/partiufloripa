@@ -19,3 +19,6 @@
 
 ## Falha de QA e correção — 2026-10-28
 Um mapa que carregava corretamente foi publicado com rótulos sobrepostos e calor desproporcional a um evento. **Carregamento não equivale a aprovação visual.** Toda mudança cartográfica exige captura em viewport móvel realista, tema claro/escuro, verificação de legibilidade, ausência de sobreposição e adequação semântica do heatmap. Evidência inicial: [captura do mapa em Chrome mobile emulado](map-qa-mobile.png). A captura é de emulação, não teste em aparelho físico.
+
+**Regress�o cartogr�fica:** verificar tamb�m data com somente 1 evento: halo vis�vel, localizado e discreto, marcador clic�vel e legenda coerente. Omitir calor somente quando n�o houver evento mapeado.
+
