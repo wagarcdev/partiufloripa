@@ -25,3 +25,6 @@
 
 **ADR-011 Seletor de data nativo — aceito (2026-10-28).** Substituir lista de datas por input date nativo, usando calendário do navegador/Android. Permitir dias sem eventos e exibir estado vazio; restringir ao intervalo das noites conhecidas. Não depende de biblioteca externa.
 
+
+**ADR-012 Categorias por experiência — aceito (2026-10-28).** Baladas = DJs, pista, festas noturnas; Dança = espetáculo coreográfico; Shows = música ao vivo; Humor, Teatro, Cinema, Festivais culturais, Feiras e Cultura permanecem distintos. Folianópolis e set de DJ Blancah passam a Baladas para atender intenção de descoberta noturna. Cards exibem emoji + texto independentemente de cartaz; filtros também exibem emoji. Revisão editorial futura pode reclassificar eventos com evidência.
+

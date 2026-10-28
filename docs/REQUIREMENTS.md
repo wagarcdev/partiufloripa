@@ -23,3 +23,6 @@ Status: protótipo técnico, não catálogo auditado.
 **Não funcionais:** responsivo, rápido em rede móvel, acessível via teclado, sem segredos no cliente, agenda funcional quando mapa falhar, datas locais consistentes, dependências externas identificadas.
 
 **Gates:** publicação técnica exige JSON/JS válidos e navegação funcional; beta exige auditoria editorial/direitos, QA, contato e privacidade; anúncios exigem conformidade e aprovação.
+
+**RF-16 � Identifica��o visual da categoria (implementado; QA mobile pendente):** todo card, com ou sem imagem, exibe �cone e nome leg�vel da categoria; filtro de categoria usa os mesmos s�mbolos. �cones n�o substituem texto.
+
