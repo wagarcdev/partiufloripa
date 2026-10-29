@@ -23,3 +23,7 @@
 ## QA e gates
 - `node scripts/test-licensed-photos.cjs` verifica hash, existência, autoria, proveniência e tamanho.
 - Testar carregamento dos cards no Chrome, legenda ilustrativa, link para créditos e regressão do mapa antes de declarar deploy concluído.
+
+## Visual polish: multiple alternatives per category
+- Expanded to 11 individually sourced Pexels stock photographs: four Humor, two Baladas, two Shows, one each for Teatro/Cinema/Festivais. Each additional item has separate photographer, license link, original photo page and file hash.
+- The displayed photo for each event is chosen deterministically using its stable event ID. This reduces repeated imagery without inventing an event-specific photo or claiming any person depicted is participating in that event.

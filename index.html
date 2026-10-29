@@ -59,7 +59,8 @@ function card(e,variant="search"){
  const symbol=categoryIcons[e.category]||"📅";
  const covers={"Baladas":"baladas","Shows":"shows","Humor":"humor","Teatro":"teatro","Cinema":"cinema","Dança":"danca","Festivais":"festivais","Feiras":"feiras","Cultura":"cultura"};
  const approved=imageRights.assets.find(a=>a.eventId===e.id&&a.rightsStatus==="approved"&&a.rightsEvidenceUrl&&a.license&&/^\.\/images\/[\w.-]+\.webp$/.test(a.file));
- const stock=categoryPhotos.items.find(a=>a.category===e.category&&a.rightsStatus==="approved"&&a.license==="Pexels License"&&a.rightsEvidenceUrl==="https://www.pexels.com/license/"&&/^\.\/assets\/photos\/[\w-]+\.webp$/.test(a.file)&&/^https:\/\/www\.pexels\.com\/photo\//.test(a.sourcePageUrl)&&a.photographer);
+ const eligiblePhotos=categoryPhotos.items.filter(a=>a.category===e.category&&a.rightsStatus==="approved"&&a.license==="Pexels License"&&a.rightsEvidenceUrl==="https://www.pexels.com/license/"&&/^\.\/assets\/photos\/[\w-]+\.webp$/.test(a.file)&&/^https:\/\/www\.pexels\.com\/photo\//.test(a.sourcePageUrl)&&a.photographer);
+ const stock=eligiblePhotos.length?eligiblePhotos[parseInt(e.id.slice(-2),16)%eligiblePhotos.length]:null;
  const img=approved?approved.file:stock?stock.file:"./assets/covers/"+(covers[e.category]||"cultura")+".svg";
  const isStock=!approved&&!!stock;
  const dt=new Date(e.date+"T12:00:00Z");
