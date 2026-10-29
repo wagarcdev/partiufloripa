@@ -47,3 +47,9 @@
 **ADR-020 Related-event recommendations deferred - accepted (2026-10-29).** Do not implement same-venue/category recommendations in the current beta scope. Reassess after beta validation.
 
 **ADR-021 Closed beta with a validated subset - accepted (2026-10-29).** Initial validation may use a limited, individually reviewed event subset. This is not authorization to launch, and current public GitHub Pages hosting is not access-controlled. Access strategy, content gates, privacy and QA remain pending before beta acceptance.
+
+**ADR-022 Expanded basemap comparison - accepted (2026-10-29).** Do not choose Esri or OpenStreetMap Standard yet. Expand the ready-made map alternatives presented for visual comparison and test the same event locations, heatmap semantics, performance and attribution. No approval to migrate the active map.
+
+**ADR-023 Editorial exceptions reviewed case by case - accepted (2026-10-29).** Keep ADR-016: an event with missing details may be published only after explicit individual human review, visible disclosure of unconfirmed fields and documented evidence. No universal rule automatically authorizes publication based on which field is missing. Missing data must never be fabricated. This is a policy decision; review workflow and acceptance remain separate.
+
+**ADR-024 Invitation-link beta access - accepted (2026-10-29).** For the initial web beta, invite a limited set of participants by sending a link instead of requiring individual logins. A shareable link is NOT access control: recipients may forward it and a public GitHub Pages URL cannot be treated as private. Do not advertise the beta as technically closed or expose unpublished/confidential content. Select a safe preview/data strategy and verify acceptance before launch.
