@@ -64,7 +64,6 @@ async function main(){
   const day=new Intl.DateTimeFormat("en-CA",{year:"numeric",month:"2-digit",day:"2-digit",timeZone:"America/Sao_Paulo"}).format(new Date());
   $("date").min=dates[0]||"";$("date").max=dates.at(-1)||"";$("date").value=dates.find(d=>d>=day)||dates[0]||"";
   lib=await import("https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.mjs");
-  if(!lib.supported())throw Error("WebGL não disponível neste navegador");
   map=new lib.Map({container:"map",style:styles.positron,center:[-48.52,-27.59],zoom:10.5,attributionControl:true});
   map.addControl(new lib.NavigationControl({showCompass:false}),"top-right");
   map.on("style.load",addLayers);
