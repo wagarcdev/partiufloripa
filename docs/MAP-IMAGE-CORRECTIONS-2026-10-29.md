@@ -19,3 +19,15 @@ The old map only allowed four region names in a hardcoded region-centre dictiona
 - Venue tests verify correct Saco Grande mapping even when event region is inconsistent, unknown region exclusion, fallback classification and invalid coordinate rejection.
 - Rights tests verify registry and availability of all nine original SVGs.
 - Browser QA must verify October 29 map marker and mobile/desktop covers before release acceptance.
+
+## Published readback and browser QA
+- Commits f6f57c2 and b9948af deployed successfully through GitHub Pages. Final workflow: https://github.com/wagarcdev/partiufloripa/actions/runs/40961187714
+- Chrome on published site at mobile 390x844 and desktop 1440x900: HTTP 200, 15 displayed cards, all 15 editorial SVG images loaded (forced eager for QA of offscreen lazy images), no broken covers, no unauthorized legacy photos, no page JS errors or horizontal overflow.
+- On 2026-10-29, map displays 2 venues/regions and 2 heat points. Daniel Duncan marker is Floripa Comedy Club at approx Square SC coordinate (-27.5346491,-48.5093949), with popup label explaining approximate position, not Lagoa.
+- Cards using the same canonical venue directory show Saco Grande even if the legacy event region was generic (e.g. Lua Lima).
+- Browser screenshots inspected: Esri map has two distinct halos (north Saco Grande and southeast Lagoa); category covers are rendered instead of standalone large emojis in media cards.
+- Existing sources with unknown locations still use bounded regional approximation where provided, or are deliberately excluded. Verified venue precision outside Floripa Comedy Club remains incomplete.
+- This is browser QA, not a rights approval of the original photos nor formal catalog/beta signoff.
+
+## Existing catalogue defects (not caused by this change)
+The older strict validator still exits nonzero on 14 diagnostics for 7 events without time, plus 30 generic-region warnings. No fields were invented or changed to suppress those findings. New venue, image-rights and structural tests passed. Editorial review remains a separate acceptance gate.
