@@ -28,7 +28,7 @@ input[type=radio]{accent-color:#6ce3bc}input[type=date]{font:inherit;color:#f5ff
 const styles={positron:"https://tiles.openfreemap.org/styles/positron",bright:"https://tiles.openfreemap.org/styles/bright",dark:"https://tiles.openfreemap.org/styles/dark"};
 const centers={"Lagoa da Conceição":[-27.6028,-48.4685],"Centro":[-27.5969,-48.5495],"Jurerê":[-27.4366,-48.4873],"Agronômica":[-27.5787,-48.5420]};
 const $=id=>document.getElementById(id),escapeHtml=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let map=null,events=[],lib=null;
+let map=null,events=[],lib=null,activeStyle="positron";
 function sourceData(){
  const grouped={};
  for(const e of events.filter(e=>e.date===$("date").value)){(grouped[e.region]??=[]).push(e)}
@@ -42,17 +42,17 @@ function addLayers(){
  const data=sourceData();
  if(!map.getSource("events"))map.addSource("events",{type:"geojson",data});else map.getSource("events").setData(data);
  if(!map.getLayer("heat"))map.addLayer({id:"heat",type:"heatmap",source:"events",paint:{
-  "heatmap-weight":["get","weight"],"heatmap-intensity":1,"heatmap-radius":34,
+  "heatmap-weight":["get","weight"],"heatmap-intensity":1,"heatmap-radius":42,
   "heatmap-opacity":0.75,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(0,0,0,0)",0.2,"#16a6bd",0.45,"#21c9a4",0.7,"#f0c967",1,"#e45c54"]
  }});
  if(!map.getLayer("halo"))map.addLayer({id:"halo",type:"circle",source:"events",paint:{
-  "circle-radius":22,"circle-blur":0.85,"circle-color":"#e0aa36","circle-opacity":0.35
+  "circle-radius":35,"circle-blur":0.7,"circle-color":"#24d6a3","circle-opacity":0.48
  }});
  if(!map.getLayer("markers"))map.addLayer({id:"markers",type:"circle",source:"events",paint:{
   "circle-radius":7,"circle-color":"#0e8073","circle-stroke-color":"#ffffff","circle-stroke-width":2
  }});
  const n=events.filter(e=>e.date===$("date").value).length;
- $("status").textContent=n+" evento(s) noturno(s), "+data.features.length+" região(ões) mapeada(s).";
+ $("status").textContent="Montando camada "+activeStyle+"... "+n+" evento(s) noturno(s), "+data.features.length+" região(ões).";
 }
 async function main(){
  try{
@@ -67,6 +67,7 @@ async function main(){
   map=new lib.Map({container:"map",style:styles.positron,center:[-48.52,-27.59],zoom:10.5,attributionControl:true});
   map.addControl(new lib.NavigationControl({showCompass:false}),"top-right");
   map.on("style.load",addLayers);
+  map.on("idle",()=>{const n=sourceData().features.length;$("status").textContent="Mapa "+activeStyle+" pronto · "+n+" região(ões) com eventos.";});
   map.on("click","markers",e=>{const f=e.features?.[0];if(f)new lib.Popup().setLngLat(f.geometry.coordinates).setHTML("<b>"+escapeHtml(f.properties.region)+"</b><hr>"+f.properties.description).addTo(map)});
   map.on("mouseenter","markers",()=>map.getCanvas().style.cursor="pointer");
   map.on("mouseleave","markers",()=>map.getCanvas().style.cursor="");
@@ -74,7 +75,7 @@ async function main(){
  }catch(err){$("status").textContent="Não foi possível carregar o mapa vetorial: "+err.message;}
 }
 document.querySelectorAll('input[name="style"]').forEach(x=>x.addEventListener("change",()=>{
- if(x.checked&&map){$("status").textContent="Carregando "+x.value+"...";map.setStyle(styles[x.value]);}
+ if(x.checked&&map){activeStyle=x.value;$("status").textContent="Carregando "+x.value+"...";map.setStyle(styles[x.value]);}
 }));
 $("date").addEventListener("change",addLayers);
 main();
