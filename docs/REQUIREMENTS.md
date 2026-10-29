@@ -9,9 +9,9 @@ Status: protótipo técnico, não catálogo auditado.
 | RF-03 | Carrossel touch | Implementado; QA pendente | Desliza no mobile sem setas |
 | RF-04 | Tema do sistema | Implementado; QA pendente | Claro/escuro respeitam preferência |
 | RF-05 | Casa em destaque | Implementado | Casa precede título nos cards |
-| RF-06 | Mapa vetorial | Implementado; QA pendente | Sem tiles geográficos; navegação funcional |
-| RF-07 | Heatmap noturno | Implementado; QA pendente | Por data/região; não confunde com público real |
-| RF-08 | Links externos | Implementado; auditoria pendente | Link corresponde ao evento correto |
+| RF-06 | Mapa com layer Esri | Implementado; QA pendente | Tiles carregam, atribuicao/licenca verificada, agenda acessivel se o mapa falhar |
+| RF-07 | Heatmap de eventos noturnos | Implementado; QA pendente | Halo discreto com um evento mapeado, marcador clicavel e sem calor com zero eventos; nao representa pessoas |
+| RF-08 | Card abre detalhe interno; CTA externo | Implementado; QA/auditoria pendente | Card inteiro abre evento interno por toque/Enter; apenas CTA abre a fonte oficial correspondente |
 | RF-09 | Dados verificados | Pendente | 100% dos eventos publicados conferidos |
 | RF-10 | Direitos/proveniência | Pendente | Fonte, data de checagem e licença de imagem registradas |
 | RF-11 | SEO | Pendente | Metadados e indexação revisados |

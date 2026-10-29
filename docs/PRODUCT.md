@@ -8,7 +8,7 @@
 
 **Princípios:** confiabilidade antes de volume; mobile-first; acessibilidade; baixo custo; proveniência; nenhuma venda/processamento de pagamento pelo portal.
 
-**MVP:** agenda, busca/filtros, cards/carrossel, links externos, mapa esquemático e calor por eventos noturnos cadastrados (não por presença de pessoas).
+**MVP:** agenda, busca/filtros, cards/carrossel, links externos, mapa com camada cartográfica Esri e calor por eventos noturnos cadastrados (não por presença de pessoas).
 
 **Fora do MVP:** app nativo, GPS dos visitantes, recursos sociais, contas, bilheteria, pagamento, scraping agressivo, prospecção comercial.
 

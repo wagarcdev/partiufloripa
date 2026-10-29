@@ -13,4 +13,4 @@
 **Dívidas:** JS/CSS/HTML monolíticos; testes UI ausentes; dados sem proveniência estruturada; `Object.groupBy` requer teste em Android antigo; CDN externo; sem pipeline de ingestão. Preferir alterações reversíveis e sem custo fixo.
 
 ## Atualização cartográfica — 2026-10-28
-A camada ativa é **Esri World Light Gray Canvas** (tiles externos); o GeoJSON local permanece no repositório, mas não é usado no mapa atual. Rótulos manuais removidos. Para menos de 3 regiões, o mapa mostra somente marcadores; o heatmap é usado a partir de 3 regiões, ainda baseado em posições regionais aproximadas. Verificar limites/licença do serviço Esri antes de tráfego comercial.
+A camada ativa é **Esri World Light Gray Canvas** (tiles externos); o GeoJSON local permanece no repositório, mas não é usado no mapa atual. Rótulos manuais removidos. O heatmap aparece sempre que existe ao menos um evento mapeado na data, inclusive em região única, com halo discreto e marcador clicável; sem eventos mapeados, não há calor. A intensidade expressa eventos cadastrados, não público real, e utiliza posições regionais aproximadas. Verificar limites/licença do serviço Esri antes de tráfego comercial.
