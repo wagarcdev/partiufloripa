@@ -3,8 +3,8 @@
 Implementação do pedido para que o balão do mapa Esri seja um mini-card visual e siga o design editorial aprovado.
 
 ## Comportamento
-- 1 evento no local: cabeçalho com casa ou bairro, fotografia licenciada/arquivo, categoria, título, dia, horário e link direto para a página de detalhes.
-- Vários eventos no mesmo local/região: mesmo cabeçalho com contador e lista de mini-cards rolável (sem cortar eventos), imagens e links individuais.
+- 1 evento no local: sem cabecalho externo; um card com foto a esquerda, nome da casa acima da categoria, titulo, horarios e link.
+- Varios eventos no mesmo local/regiao: cada minicard mostra nome da casa antes da categoria e seu proprio link, com lista rolavel e sem cabecalho externo.
 - Imagens são selecionadas com `PartiuMedia.select`, o mesmo seletor do catálogo, com as mesmas regras de prioridade, licença e imagem consistente por casa.
 - Se a casa não tiver coordenada precisa, a legenda distingue localização aproximada da casa e ponto genérico do bairro. Nunca inferir endereço mais específico do que o registrado.
 - Escape em textos e validação local do caminho da imagem e slug; navegação preserva URL SEO existente.
@@ -35,3 +35,10 @@ Implementação do pedido para que o balão do mapa Esri seja um mini-card visua
 - QA Chrome no site publicado: 390x844 e 1440x900, popup do Daniel Duncan em 29/10 com **284 px de largura e 132 px de altura**; anteriormente tinha aproximadamente 302 px de largura e mais de 200 px de altura. Foto carregada, nome, dois horários, casa e link presentes, sem erros JavaScript nem transbordamento horizontal. Screenshot mobile inspecionada e legível.
 - Teste de três eventos simulados no mesmo local: três mini-cards preservados, lista com rolagem interna; 220 px de altura no mobile e 246 px no desktop. Este cenário está validado com fixture, não é um trio de eventos reais do catálogo de 29/10.
 - Contraste e legenda de mídia continuam conforme as regras já aprovadas. Mapa-base Esri e heatmap não alterados.
+
+## Ajuste visual solicitado em 29/10/2026
+- Removidas as linhas superiores do popup. Nome da casa movido para a coluna da direita, acima da categoria, inclusive em pontos com varios eventos.
+- Legenda de precisao geografica removida da area visual do card, preservada em title e aria-label. O mapa continua informando que os pontos sao aproximados.
+- Card unico: 284 x 122 px, incluindo bordas; imagem preservada, CTA e horarios visiveis.
+- QA real em Chrome headless: viewports 390x844 e 1440x900, temas claro e escuro, sem erros JS, sem transbordamento, 3 eventos ficticios para validar lista e rolagem.
+- Testes: node scripts/test-map-popup.cjs, node scripts/check-site.cjs e node --check scripts/map-popup.js aprovados. validate-events.cjs aponta 14 problemas preexistentes de horario em 7 eventos, nao relacionados ao popup.

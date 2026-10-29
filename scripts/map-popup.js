@@ -16,17 +16,16 @@
    const time=/^([01]\d|2[0-3]):[0-5]\d$/.test(e.time||"")?e.time:"A confirmar";
    const show=/^([01]\d|2[0-3]):[0-5]\d$/.test(e.showTime||"")?'<span class="pf-map-show">Show '+escape(e.showTime)+'</span>':"";
    const href=typeof e.slug==="string"&&/^[a-z0-9-]+$/.test(e.slug)?"./evento/"+encodeURIComponent(e.slug)+"/":"./index.html";
-   const location=multiple?"":'<div class="pf-map-venue">'+escape(e.venue||venue)+'</div><div class="pf-map-location">'+escape(precision)+'</div>';
+   const place=escape(e.venue||venue);
    const metadata='<div class="pf-map-meta">'+escape(date)+' · '+escape(time)+(show?' · '+show:"")+'</div>';
    return '<article class="pf-map-event"><div class="pf-map-photo-wrap"><img class="pf-map-photo" src="'+escape(src)+'" alt="'+escape(alt)+'" loading="eager">'+
     (hint?'<span class="pf-map-image-hint">'+escape(hint)+'</span>':"")+'</div>'+
-    '<div class="pf-map-event-body"><span class="pf-map-category">'+escape(e.category||"Evento")+'</span>'+
-    '<div class="pf-map-event-title">'+escape(e.title||"Evento")+'</div>'+metadata+location+
+    '<div class="pf-map-event-body"><div class="pf-map-venue" title="'+escape(precision)+'" aria-label="'+place+'. '+escape(precision)+'">'+place+'</div><span class="pf-map-category">'+escape(e.category||"Evento")+'</span>'+
+    '<div class="pf-map-event-title">'+escape(e.title||"Evento")+'</div>'+metadata+
     '<a class="pf-map-event-link" href="'+escape(href)+'" aria-label="Ver detalhes de '+escape(e.title||"evento")+'">Ver evento <span aria-hidden="true">↗</span></a></div></article>';
   }).join("");
-  const heading=multiple?'<header class="pf-map-venue-header"><strong>'+escape(venue)+'</strong><span>'+items.length+' eventos · '+escape(precision)+'</span></header>':"";
-  return '<section class="pf-map-card '+(multiple?'pf-map-card--multi':'pf-map-card--single')+'" aria-label="Eventos em '+escape(venue)+'">'+
-   heading+'<div class="pf-map-events'+(items.length>2?' pf-map-events-scroll':'')+'">'+cards+'</div></section>';
+  return '<section class="pf-map-card '+(multiple?'pf-map-card--multi':'pf-map-card--single')+'" aria-label="'+items.length+' evento(s) em '+escape(venue)+'; '+escape(precision)+'">'+
+   '<div class="pf-map-events'+(items.length>2?' pf-map-events-scroll':'')+'">'+cards+'</div></section>';
  }
  const api={render};
  if(typeof module!=="undefined"&&module.exports)module.exports=api;

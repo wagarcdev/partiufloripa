@@ -5,10 +5,14 @@ const single={title:'Daniel Duncan',category:'Humor',date:'2026-10-29',time:'19:
 const licensed=()=>({kind:'illustrative',file:'./assets/photos/humor-3.webp'});
 const html=render(pos,[single],licensed);
 for(const key of ['pf-map-card--single','pf-map-photo','Daniel Duncan','Floripa Comedy Club','29/10','19:00','Show 21:00','Foto ilustrativa','Ver evento','/evento/daniel-duncan-evt-abc/','Local aproximado da casa'])assert(html.includes(key),key);
-assert(!html.includes('pf-map-venue-header'),'single popup must be the card itself, no extra header');
+assert(!html.includes('pf-map-venue-header'),'popup must have no separate header');
+assert(html.indexOf('>Floripa Comedy Club</div>') < html.indexOf('>Humor</span>'),'venue must precede category beside photo');
+assert(!html.includes('>Local aproximado da casa</div>'),'no extra visible location line');
+assert(html.includes('aria-label="Floripa Comedy Club. Local aproximado da casa"'),'approximate location remains accessible');
 assert(!html.includes('pf-map-events-scroll'));
 const many=render(pos,[single,{...single,title:'Segundo artista',slug:'second-evt-def'},{...single,title:'Terceiro artista',slug:'third-evt-ghi'}],licensed);
-assert(many.includes('pf-map-card--multi')&&many.includes('pf-map-events-scroll')&&many.includes('pf-map-venue-header'));
+assert(many.includes('pf-map-card--multi')&&many.includes('pf-map-events-scroll')&&!many.includes('pf-map-venue-header'));
+assert.equal((many.match(/class="pf-map-venue" title=/g)||[]).length,3,'each event should show venue above category');
 assert.equal((many.match(/class="pf-map-event"/g)||[]).length,3);
 const xss=render({venue:'<img src=x onerror=alert(1)>',precision:'region_centroid',region:'Centro'},[{...single,title:'<script>alert(1)</script>',slug:'../../evil'}],()=>({kind:'artist',file:'https://evil.example/tracker.png'}));
 assert(xss.includes('&lt;script&gt;')&&xss.includes('Ponto aproximado do bairro'));
