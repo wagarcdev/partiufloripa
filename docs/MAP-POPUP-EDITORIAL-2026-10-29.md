@@ -15,3 +15,7 @@ Implementação do pedido para que o balão do mapa Esri seja um mini-card visua
 - `node scripts/check-site.cjs`: JS embutido da página estática.
 - Workflow GitHub Pages executa teste novo junto dos testes de catálogo/mídia.
 - Chrome/Playwright contra site publicado deve validar abertura do balão, render de imagem e link do evento em viewport mobile/desktop, e cenário de múltiplos eventos; testes de navegador devem ser documentados após deploy.
+
+## Link de prévia direto
+- `?view=map&date=2026-10-29&popup=floripa-comedy-club` abre o mapa Esri na data indicada e mostra diretamente o mini-card do Floripa Comedy Club (Daniel Duncan) para avaliação visual.
+- Parâmetros `date` e `popup` têm formato validado; data só é aplicada dentro dos limites do calendário. Depois de abrir, alterações normais do usuário no mapa continuam livres, sem forçar novamente a prévia.
