@@ -31,7 +31,7 @@ a:focus-visible{outline:3px solid #f5d78f;outline-offset:5px}
 .hero-bottom{display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:24px}
 .hero-bottom strong{display:block;font-size:clamp(15px,2vw,22px);margin-top:7px;font-weight:850;line-height:1.2}
 .hero-art{display:flex;align-items:center;gap:19px}
-.hero-art .emoji{font-size:clamp(34px,6vw,55px)}
+.hero-thumbnail{width:110px;height:110px;object-fit:cover;border:3px solid #f5d78f;border-radius:6px;box-shadow:0 6px 18px #09141a70}.hero-art{align-items:center}.photo-caption{font-size:12px;line-height:1.5;color:#e1ebe6;margin:10px 0}.photo-caption a{color:#f5d78f}.hero-art .emoji{font-size:clamp(34px,6vw,55px)}
 .hero-art .number{font-size:clamp(60px,8vw,98px);line-height:.82;font-weight:900;color:#f5d78f;letter-spacing:-7px}
 .content{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);gap:clamp(26px,4vw,56px);
  padding:clamp(23px,4vw,50px);border-top:4px solid #f5d78f;color:#f5f7f1}
@@ -68,16 +68,18 @@ a:focus-visible{outline:3px solid #f5d78f;outline-offset:5px}
 <a class="back" href="./index.html">← Voltar à agenda</a>
 <div id="detail" class="event-panel" aria-live="polite"><p class="error">Carregando evento...</p></div>
 </main>
-<script>
+<script src="./scripts/media-selection.js"></script><script>
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const icons={"Baladas":"🪩","Shows":"🎤","Humor":"😂","Teatro":"🎭","Cinema":"🎬","Dança":"💃","Festivais":"🎪","Feiras":"🛍️","Cultura":"📚"};
 const qs=new URLSearchParams(location.search);
 const id=qs.get("id")||document.documentElement.dataset.eventId,date=qs.get("date"),title=qs.get("title"),venue=qs.get("venue");
 const detail=document.getElementById("detail");
+let mediaRegistry={categoryPhotos:{items:[]},venueMedia:{items:[]},eventPhotos:{assets:[]},imageRights:{assets:[]}};
 function notice(message,warning=false){return '<p role="note" class="notice'+(warning?' warning':'')+'">'+esc(message)+'</p>'}
 function show(e){
  document.title=e.title+" — PartiuFloripa";
  const emoji=icons[e.category]||"📅";
+ const visual=PartiuMedia.select(e,mediaRegistry);
  const day=new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"long",weekday:"long",timeZone:"UTC"}).format(new Date(e.date+"T12:00:00Z"));
  const shortDate=new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"short",weekday:"long",timeZone:"UTC"}).format(new Date(e.date+"T12:00:00Z")).toUpperCase();
  const reviewed=e.status==="verified",quarantined=e.sourceReview==="quarantined";
@@ -99,12 +101,12 @@ function show(e){
  const ticketHtml=e.price?'<div class="secondary"><span class="label">Ingressos / valores informados</span><strong>'+esc(e.price)+'</strong></div>':"";
  const source=sourceUrl&&!quarantined?'<a class="cta" href="'+esc(sourceUrl)+'" target="_blank" rel="noopener noreferrer">Conferir informações ↗</a>':'';
  const more=e.note?'<p class="note">'+esc(e.note)+'</p>':"";
- detail.innerHTML='<section class="hero" aria-labelledby="event-title"><div class="overline">PartiuFloripa / '+esc(e.category||"Eventos")+'</div><h1 id="event-title">'+esc(e.title)+'</h1><div class="hero-bottom"><div><div class="kicker">'+esc(e.category||"Evento")+' · Florianópolis</div><strong>'+esc(shortDate)+'</strong></div><div class="hero-art" aria-hidden="true"><span class="emoji">'+emoji+'</span><span class="number">'+esc(e.date.slice(8,10))+'</span></div></div></section>'+
+ detail.innerHTML='<section class="hero" aria-labelledby="event-title"><div class="overline">PartiuFloripa / '+esc(e.category||"Eventos")+'</div><h1 id="event-title">'+esc(e.title)+'</h1><div class="hero-bottom"><div><div class="kicker">'+esc(e.category||"Evento")+' · Florianópolis</div><strong>'+esc(shortDate)+'</strong></div><div class="hero-art"><img class="hero-thumbnail" src="'+esc(visual.file)+'" alt="Foto ilustrativa ou de arquivo" loading="eager"><span class="number" aria-hidden="true">'+esc(e.date.slice(8,10))+'</span></div></div></section>'+
  '<div class="content"><section aria-labelledby="info-heading"><div class="kicker">Informações do evento</div><h2 id="info-heading">O que você precisa saber</h2>'+timeRows+venueHtml+ticketHtml+more+'</section>'+
  '<aside aria-labelledby="source-heading"><div class="kicker">Informações e ingressos</div><h2 id="source-heading">Confira os detalhes</h2><p class="context">Consulte a fonte antes de sair. Horários, disponibilidade e ingressos podem mudar.</p>'+warnings+source+
- '<p class="disclosure">Arte de categoria ilustrativa, sem representar um cartaz oficial.</p><p class="footer-note">O PartiuFloripa não vende ingressos.</p></aside></div>';
+ ''+(visual.kind==="artist"?'<p class="photo-caption">Foto de arquivo do artista, não desta apresentação em Florianópolis. <a target="_blank" rel="noopener noreferrer" href="'+esc(visual.sourceUrl)+'">Crédito e licença ↗</a></p>':visual.kind==="illustrative"?'<p class="photo-caption">Foto ilustrativa. <a href="./creditos.html">Crédito ↗</a></p>':'<p class="disclosure">Arte de categoria ilustrativa, sem representar um cartaz oficial.</p>')+'<p class="footer-note">O PartiuFloripa não vende ingressos.</p></aside></div>';
 }
-fetch("./events.json").then(r=>{if(!r.ok)throw Error("Falha ao carregar");return r.json()}).then(data=>{
+Promise.all(["./events.json","./data/venue-media.json","./data/event-artist-photos.json","./data/licensed-category-photos.json","./data/image-rights.json"].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error("Falha "+url);return r.json()}))).then(([data,venueMedia,eventPhotos,categoryPhotos,imageRights])=>{mediaRegistry={venueMedia,eventPhotos,categoryPhotos,imageRights};
  const e=data.events.find(x=>id?x.id===id:(x.date===date&&x.title===title&&x.venue===venue));
  if(!e){detail.innerHTML='<p class="error">Evento não encontrado. <a href="./index.html">Voltar à agenda</a>.</p>';return}
  if(!/^https:\/\//.test(e.source)){detail.innerHTML='<p class="error">Fonte do evento indisponível.</p>';return}

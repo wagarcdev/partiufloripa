@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "policy": "One generic licensed image per known venue. Not an actual photo of venue or event.",
+  "items": [
+    {
+      "venue": "Balbúrdia Florianópolis",
+      "imageFile": "./assets/photos/baladas.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Baladas",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Bar do Espartano",
+      "imageFile": "./assets/photos/baladas-2.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Baladas",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Cinema Gilberto Gerlach",
+      "imageFile": "./assets/photos/cinema.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Cinema",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Delfino 146",
+      "imageFile": "./assets/photos/shows.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Shows",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Floripa Comedy Club",
+      "imageFile": "./assets/photos/humor-3.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Humor",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "MIS/SC",
+      "imageFile": "./assets/photos/cinema.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Cinema",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "P12 Jurerê",
+      "imageFile": "./assets/photos/baladas-2.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Baladas",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Passarela Nego Quirido",
+      "imageFile": "./assets/photos/festivais.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Baladas",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Stage Music Park",
+      "imageFile": "./assets/photos/shows-2.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Shows",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Teatro Ademir Rosa",
+      "imageFile": "./assets/photos/teatro.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Teatro",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Teatro Pedro Ivo",
+      "imageFile": "./assets/photos/teatro.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Dança",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Teatro Álvaro de Carvalho",
+      "imageFile": "./assets/photos/teatro.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Shows",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "Terraza Music Park",
+      "imageFile": "./assets/photos/baladas.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Baladas",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    },
+    {
+      "venue": "UNDR Florianópolis",
+      "imageFile": "./assets/photos/baladas.webp",
+      "photoType": "licensed_generic_illustration",
+      "scope": "venue",
+      "categoryHint": "Baladas",
+      "evidenceRef": "data/licensed-category-photos.json",
+      "sourceImageIsNotActualVenue": true
+    }
+  ]
+}

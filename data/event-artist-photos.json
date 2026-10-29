@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "disclosure": "Fotos de arquivo de artistas/produções associadas, não captadas nos eventos anunciados em Florianópolis.",
+  "assets": [
+    {
+      "id": "gregorio-duvivier",
+      "eventIds": [
+        "evt-a2fa2c2379b5",
+        "evt-d6de7aa71729",
+        "evt-86de8aca90b1"
+      ],
+      "file": "./assets/event-artists/gregorio-duvivier.webp",
+      "status": "approved",
+      "role": "artist_archive",
+      "isPhotoOfUpcomingEvent": false,
+      "subject": "Gregório Duvivier",
+      "displayLabel": "Foto do artista · arquivo",
+      "caption": "Gregório Duvivier após apresentação de O Céu da Língua em Amsterdã (2026); não é imagem do evento em Florianópolis.",
+      "photographer": "ArlindoPereira",
+      "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Greg%C3%B3rio_Duvivier_em_2026.jpg",
+      "sourceFileTitle": "File:Gregório Duvivier em 2026.jpg",
+      "rightsEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Greg%C3%B3rio_Duvivier_em_2026.jpg",
+      "license": "cc by 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "modifiedFromOriginal": "Redimensionamento e corte para imagem de capa; moldura desfocada quando fonte vertical.",
+      "sha256": "7dfab5781988448e0f35475da8ed6e347525949621dc20071a0992f56654d6ef",
+      "reviewedAt": "2026-10-29"
+    },
+    {
+      "id": "vitor-kley",
+      "eventIds": [
+        "evt-68c009490966"
+      ],
+      "file": "./assets/event-artists/vitor-kley.webp",
+      "status": "approved",
+      "role": "artist_archive",
+      "isPhotoOfUpcomingEvent": false,
+      "subject": "Vitor Kley",
+      "displayLabel": "Foto do artista · arquivo",
+      "caption": "Vitor Kley na Virada Cultural de Novo Hamburgo (2022); não é imagem do show em Florianópolis.",
+      "photographer": "Prefeitura de Novo Hamburgo Comunicação",
+      "sourceFilePage": "https://commons.wikimedia.org/wiki/File:Vitor_Kley_na_virada_cultural_novembro_2022_(6)_(54069660540).jpg",
+      "sourceFileTitle": "File:Vitor Kley na virada cultural novembro 2022 (6) (54069660540).jpg",
+      "rightsEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Vitor_Kley_na_virada_cultural_novembro_2022_(6)_(54069660540).jpg",
+      "license": "cc0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "modifiedFromOriginal": "Redimensionamento e corte para imagem de capa; moldura desfocada quando fonte vertical.",
+      "sha256": "ee06d79e1ea3298cf4053bbd2b56050701529dc735c2ef99b7fb7d11aff337c4",
+      "reviewedAt": "2026-10-29"
+    }
+  ]
+}

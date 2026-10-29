@@ -15,6 +15,7 @@ p{line-height:1.65;color:#c9dce0}.lead{max-width:780px}
 <main><h1>Créditos das fotografias</h1>
 <p class="lead">As fotografias abaixo são <strong>ilustrativas das categorias</strong>. Elas não retratam necessariamente o artista, a casa, a cidade ou a apresentação anunciada. Foram selecionadas individualmente de páginas com indicação da <a href="https://www.pexels.com/pt-br/licenca/" target="_blank" rel="noopener noreferrer">Licença Pexels</a>, que permite uso em sites e projetos comerciais. Direitos de pessoas, marcas e obras retratadas podem exigir cuidados adicionais.</p>
 <div id="cards" class="cards"><p>Carregando créditos…</p></div>
+<h2>Fotos de arquivo de artistas</h2><p>Fotos de artistas ou produções, mas de outras datas e cidades. Não representam os shows anunciados.</p><div id="artist-credits" class="cards"><p>Carregando…</p></div>
 <p>Os cartazes e fotografias específicas dos eventos são tratados separadamente e não são usados sem evidência de direitos. Para pedir a correção ou remoção de uma imagem, consulte o <a href="https://github.com/wagarcdev/partiufloripa">repositório público do projeto</a>.</p>
 </main>
 <script>
@@ -22,4 +23,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 fetch("./data/licensed-category-photos.json").then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{
  document.getElementById("cards").innerHTML=data.items.map(a=>'<article class="card"><img loading="lazy" src="'+esc(a.file)+'" alt="Fotografia ilustrativa: '+esc(a.category)+'"><div><h2>'+esc(a.category)+'</h2><p>Fotografia: '+esc(a.photographer)+' · Pexels</p><a target="_blank" rel="noopener noreferrer" href="'+esc(a.sourcePageUrl)+'">Ver foto e origem ↗</a></div></article>').join("");
 }).catch(()=>{document.getElementById("cards").textContent="Não foi possível carregar os créditos."});
+fetch("./data/event-artist-photos.json").then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{
+ document.getElementById("artist-credits").innerHTML=data.assets.map(a=>'<article class="card"><img loading="lazy" src="'+esc(a.file)+'" alt="Foto de arquivo de '+esc(a.subject)+'"><div><h2>'+esc(a.subject)+'</h2><p>'+esc(a.caption)+'</p><p>Foto: '+esc(a.photographer)+' · Licença: <a target="_blank" rel="noopener noreferrer" href="'+esc(a.licenseUrl)+'">'+esc(a.license)+'</a></p><p>Alterações: '+esc(a.modifiedFromOriginal)+'</p><a target="_blank" rel="noopener noreferrer" href="'+esc(a.sourceFilePage)+'">Ver arquivo original ↗</a></div></article>').join("");
+}).catch(()=>{document.getElementById("artist-credits").textContent="Não foi possível carregar os créditos dos artistas."});
 </script></body></html>
