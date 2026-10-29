@@ -44,3 +44,7 @@ Estado: **PROPOSTO / AGUARDANDO DECISÃO DO CLIENTE**. Atualizado em 2026-10-29.
 2. Reconciliar evidências com requisitos e critérios de aceite.
 3. Submeter pacotes ao Cliente no centro de aprovações, quando o gateway estiver validado; registrar decisão exata e acknowledgement.
 4. Atualizar read model determinístico do dashboard e verificar leitura de retorno.
+
+## Detalhamento do Figma e dos gates por area
+- IDs, classes, criterios, dependencias e status de dashboard: [PIPELINE-ALS-2026-10-29.md](PIPELINE-ALS-2026-10-29.md#complemento--figma-decisoes-e-dashboard-2026-10-29).
+- Gateways ainda PENDING; nenhuma decisao do Client foi inferida.

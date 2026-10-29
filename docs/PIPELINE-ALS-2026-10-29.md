@@ -5,7 +5,7 @@ Atualizado: 2026-10-29 | Estado: documentação operacional; **nenhum aceite inf
 - Canônica: https://github.com/wagarcdev/partiufloripa
 - Decisão A1.10: [UI-CARDS-A1.10.md](UI-CARDS-A1.10.md)
 - Implementação A1.11: [CARD-NAVIGATION-AND-IMAGES.md](CARD-NAVIGATION-AND-IMAGES.md)
-- Protocolo transversal: H-APPROVAL-001, no repositório `wagarcdev/ai-workspace/APPROVAL-CENTER.md`.
+- Protocolo transversal: AI-Workspace/ALS/approval-center-contract.md (v0.1-candidate), ALS/acceptance-contract.md e ALS/dashboard-contract.md (v0.2-draft). O caminho remoto anterior APPPROVAL-CENTER.md não foi confirmado; não tratá-lo como link operacional.
 - Dashboard é **projeção**, não nova fonte de verdade. Não registrar aprovações sem decisão do Client e readback.
 
 ## Pipeline: ações, artefatos e gates
@@ -32,3 +32,34 @@ Atualizado: 2026-10-29 | Estado: documentação operacional; **nenhum aceite inf
 
 ## Prioridade recomendada (não equivale a aprovação)
 1. QA A1.11 e evidência visual; 2. proposta de design da página de detalhes; 3. inventário/licenças e seleção de fotos; 4. retenção por descoberta relacionada; 5. IDs/SEO e enriquecimento de dados.
+
+## Complemento — Figma, decisões e Dashboard (2026-10-29)
+
+Arquivo Figma: https://www.figma.com/design/iLSNGxgYRAtqMQYyOcdZhf . Foundations com quatro cores; frame mobile 390×844; screenshot original bloqueado sob header, logo e busca editáveis. Alterações persistiram após F5. Capturas desktop e mobile corrigidas estão no Git. **Ainda não houve homologação visual.** Acesso via Chrome autenticado, sem Figma API/MCP.
+
+| ID | Área | Classe ALS | Artefato | Próxima ação | Decisão do Client | Estado |
+|---|---|---|---|---|---|---|
+| PF-DS-01 | UX / Design System | routine_operation | Foundations: tokens, tipografia, espaçamento | Completar Figma e comparar CSS | Nenhuma para execução rotineira | in_progress |
+| PF-DS-02 | UX / Design System | acceptance_deliverable | Design System v1: componentes, variantes, estados, evidências | Preparar pacote verificável | Homologar / ressalvas / rejeitar / alterações | preparation, não enviado |
+| PF-UI-01 | UX / Interface | acceptance_deliverable | Telas mobile + desktop reconstruídas sobre screenshots bloqueados | Importar desktop, completar telas e comparar 100% | Homologar fidelidade visual após QA | in_progress, não enviado |
+| PF-MAP-01 | Produto / UX | decision_gate | Proposta do heatmap real + seletor calendário | Apresentar alternativas e comportamento mobile/data/período | Escolher alternativa visual/funcional | proposed, sem pacote |
+| PF-MAP-02 | Engenharia / QA | acceptance_deliverable | Mapa/calendário implementados e testados | Testar filtros, datas, densidade, performance e acessibilidade | Homologar entrega verificada | not_ready; depende PF-MAP-01 |
+| PF-FIGMA-OPS-01 | Infraestrutura | routine_operation | Harness de browser GUI com readback e screenshots | Consolidar scripts seguros; CDP isolado segue não autenticado | Nenhuma para rotina autorizada | GUI verified; CDP pending |
+| PF-FIGMA-ORG-01 | Governança | decision_gate | Renomeação de equipe Beyond Droid → AI Work | Verificar efeitos na equipe compartilhada | Confirmar nome e escopo | proposed |
+| PF-DASH-01 | Governança | routine_operation | Projeção determinística por área, artefato e ação | Conectar manifesto ao gateway quando operacional e validar readback | Nenhuma para gerar projeção | gateway PENDING |
+
+### Contrato de projeção por área
+- Fonte canônica: GitHub deste projeto e decisões registradas. Dashboard é projeção e superfície de decisão, nunca segunda fonte de verdade.
+- Campos: id, projectId=partiufloripa, area, work_class, state, artifact_refs, next_action, client_action, evidence_refs, blockers, updated_at, dashboard_delivery.
+- Só criar pedido de aprovação com artefato revisável, requestId estável, revisão/hash, MIME, critérios e evidências. Não criar gate para rotina.
+- Transporte dashboard_delivery=PENDING até gateway autenticado, persistência, renderer, callback, idempotência e readback comprovados. Nenhum item desta tabela foi publicado no Approval Center.
+- Ciclo de transporte: created → published → in_review → decided → dispatched → acknowledged. Ausência de resposta, commit ou teste nunca equivalem a aprovação.
+- Apresentar por departamento/pipeline os itens em preparação, em execução, aguardando decisão, bloqueados e verificados, sem porcentagens inventadas.
+
+### Critérios para disponibilizar botões de decisão
+- PF-DS-02: biblioteca navegável, estados e variantes, tokens reconciliados com CSS, screenshots, desvios e critérios PASS/FAIL.
+- PF-UI-01: frames mobile 390×844 e desktop 1440×900, screenshots bloqueados abaixo dos elementos editáveis, comparação 100% e responsividade.
+- PF-MAP-01: alternativa(s) de protótipo com heatmap verdadeiro, calendário, período, estados vazios e comportamento mobile.
+- PF-MAP-02: evidência real de testes de data, filtros, densidade, legenda, performance e acessibilidade.
+
+Prioridade sugerida (não é aprovação): PF-DS-01, PF-UI-01, PF-MAP-01, PF-DS-02, PF-MAP-02. Produto permanece portal web primeiro; app/social fora do MVP.
