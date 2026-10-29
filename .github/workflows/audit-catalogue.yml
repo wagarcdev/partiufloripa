@@ -1,0 +1,32 @@
+name: Audit event catalogue (on demand)
+on:
+  workflow_dispatch:
+    inputs:
+      reference_date:
+        description: 'YYYY-MM-DD (leave blank to use Sao Paulo local date)'
+        type: string
+        required: false
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/test-audit-catalogue.cjs
+      - name: Generate editorial snapshot
+        env:
+          REFERENCE_DATE: ${{ inputs.reference_date }}
+        run: |
+          DAY="${REFERENCE_DATE:-$(TZ=America/Sao_Paulo date +%F)}"
+          if [[ ! "$DAY" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then exit 1; fi
+          node scripts/audit-catalogue.cjs "$DAY" out/catalogue-report.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catalogue-audit-${{ github.run_id }}
+          path: out/catalogue-report.md
+          retention-days: 14
+          if-no-files-found: error

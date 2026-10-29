@@ -23,3 +23,8 @@
 - **Beta:** a estrategia aprovada e beta fechado com subconjunto validado, mas o GitHub Pages atual e publico tecnicamente e nao possui controle de acesso.
 - **Governanca:** homologacao ALS do design, fontes, mapa e criterios de beta; dashboard gateway ainda nao comprovado.
 - **Automacao periodica:** nao ativa. Considerar somente apos aprovar primeira fonte e validar uma execucao sob demanda.
+
+## Complemento de auditoria e UI
+- Pagina de detalhe refinada: separa horario de abertura e atracao, sinaliza dados ausentes, informa catalogo experimental, retira CTA de fontes em quarentena e evita tratar qualquer fonte como oficial sem prova. Commit a7024ab; QA mobile tres casos com sucesso.
+- Auditoria deterministica gerou snapshot de 56 registros: 7 sem horario, 30 bairros/regioes genericos, 5 com fonte em quarentena, 12 com arquivos de imagem ainda nao autorizados e nenhum status individualmente verificado. Nao publicar dados como aprovados.
+- Workflow audit-catalogue.yml: relatorio sob demanda como artefato do GitHub Actions, sem servidor local, sem cron e sem alterar o catalogo.
