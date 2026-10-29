@@ -31,3 +31,7 @@
 
 **ADR-013 Fallback visual por casa — aceito (2026-10-28).** Hierarquia de capa: cartaz do evento quando disponível, depois identidade visual da casa já existente no repositório, depois arte neutra da categoria com emoji. No fallback da casa, exibir aviso 'Imagem da casa' para não apresentar logotipo como cartaz específico. O logo local do Bar do Espartano é reutilizado nas ocorrências sem cartaz. Outros locais continuam com arte de categoria até se obter imagem de casa adequada e autorização de uso. Não confundir reutilização técnica com licença comercial.
 
+
+**ADR-014 Coleta automatizada com revisÃ£o de exceÃ§Ãµes â€” aceito (2026-10-29).** Automatizar descoberta/atualizaÃ§Ã£o a partir de fontes permitidas; encaminhar dados ambÃ­guos, alteraÃ§Ãµes conflitantes e problemas de direitos para revisÃ£o. Fontes, frequÃªncia e regras detalhadas permanecem pendentes. NÃ£o declarar pipeline implementado.
+
+**ADR-015 IDs estÃ¡veis, URLs amigÃ¡veis e SEO no MVP web â€” aceito (2026-10-29).** Implementar nesta fase identificadores persistentes, endereÃ§os legÃ­veis/compartilhÃ¡veis e metadados/indexaÃ§Ã£o SEO por evento. Garantir compatibilidade com links anteriores e hospedagem estÃ¡tica no GitHub Pages. DecisÃ£o de escopo, nÃ£o implementaÃ§Ã£o ou homologaÃ§Ã£o.
