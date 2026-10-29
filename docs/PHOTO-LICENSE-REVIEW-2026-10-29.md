@@ -27,3 +27,12 @@
 ## Visual polish: multiple alternatives per category
 - Expanded to 11 individually sourced Pexels stock photographs: four Humor, two Baladas, two Shows, one each for Teatro/Cinema/Festivais. Each additional item has separate photographer, license link, original photo page and file hash.
 - The displayed photo for each event is chosen deterministically using its stable event ID. This reduces repeated imagery without inventing an event-specific photo or claiming any person depicted is participating in that event.
+
+## Publicacao e QA (29/10/2026)
+- Commits `0880138` (primeiras seis fotos) e `674cbeb` (ampliacao para 11) publicados no `main`.
+- GitHub Pages: https://github.com/wagarcdev/partiufloripa/actions/runs/40966531545 — sucesso no pipeline com validacao de fotos/licencas, hashes e estrutura.
+- QA Chrome real contra o site publico, viewports mobile 390x844 e desktop 1440x900. 15 imagens ilustrativas carregadas nos cards renderizados, nenhuma quebrada, 15 selos `Foto ilustrativa`, zero cartazes especificos liberados indevidamente, 0 erros de JavaScript, 0 overflow horizontal.
+- Pagina `creditos.html`: HTTP 200, 11 fotos e 11 vinculos para origem com nome dos respectivos fotografos; nenhuma imagem quebrada. Revisada em navegador.
+- Regressao do Esri/heatmap: Floripa Comedy Club presente e 2 pontos de calor em 29/10.
+- Screenshot mobile revisada: as comedias passaram a usar fotos distintas de microfones e palcos; baladas e shows tambem variam. `Foto ilustrativa` esta visivel nos cards.
+- Foto real **nao significa cartaz/evento verdadeiro**. Imagens especificas dos eventos e mais validacao editorial continuam pendentes.
