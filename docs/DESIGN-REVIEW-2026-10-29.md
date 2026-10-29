@@ -27,3 +27,9 @@ Neither proposal is accepted; current production A1.11 remains a working impleme
 - User clarified Esri is already satisfactory and approved as primary basemap. ADR-025 supersedes ADR-022's open selection without removing comparison prototypes.
 - The existing night/expressive prototype underperformed the light editorial version in information readability and color contrast.
 - **Accepted directional preference, not visual signoff:** preserve the editorial hierarchy and legibility. Prototype an editorial dark variant with higher contrast, readable type and restrained accents. Do not replace the live event page until explicitly homologated.
+
+## Revised prototype and browser readback
+- `design-event-directions.html` offers "Cartaz da Ilha" and a revised "Editorial Noturno - alto contraste" variant, replacing the less legible loud/condensed treatment. The event page in production was **not** replaced.
+- The dark variant keeps the editorial serif title, uses high-contrast cream text on deep teal background, separate show/opening timing, restrained warm accent and differentiated primary CTA.
+- QA Chrome headless against the published prototype at 390x844 and 1440x844: HTTP 200, variant selected, event data loaded, 0 JS page errors, no horizontal overflow. Verified readable text colors by computed style and inspected mobile screenshot.
+- User's approval of Esri (ADR-025) is recorded; these UI proposals remain pending visual approval.
