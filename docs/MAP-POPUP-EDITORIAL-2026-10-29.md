@@ -27,3 +27,11 @@ Implementação do pedido para que o balão do mapa Esri seja um mini-card visua
 - Cenário simulado de 3 eventos no mesmo ponto: 3 mini-cards e rolagem interna funcional em ambos os tamanhos; conteúdo e links separados, nenhum evento eliminado.
 - URL `/?view=map&date=2026-10-29&popup=floripa-comedy-club` validada no navegador: abre automaticamente o mapa Esri em 29/10 e o mini-card do Floripa Comedy Club, foto carregada, controle de zoom correto.
 - Visualização não comprova licença de cartazes específicos; segue usando seletor determinístico atual e imagens permitidas.
+
+## Refinamento compacto, a pedido do cliente
+- Feedback: o popup anterior ocupava grande parte do mapa porque tinha card externo com cabeçalho e card interno. Solução: retirar o cabeçalho inteiro para eventos únicos; o mini-card passa a ocupar o popup todo, sem perder categoria, foto, nome, data, horário, local aproximado ou CTA.
+- Para múltiplos eventos no ponto, mantém apenas uma linha de contexto da casa e uma lista rolável compacta; nenhum registro é suprimido.
+- Implementação commit `d0cf261`, GitHub Pages Actions `40973973013` com jobs validate e deploy concluídos com sucesso.
+- QA Chrome no site publicado: 390x844 e 1440x900, popup do Daniel Duncan em 29/10 com **284 px de largura e 132 px de altura**; anteriormente tinha aproximadamente 302 px de largura e mais de 200 px de altura. Foto carregada, nome, dois horários, casa e link presentes, sem erros JavaScript nem transbordamento horizontal. Screenshot mobile inspecionada e legível.
+- Teste de três eventos simulados no mesmo local: três mini-cards preservados, lista com rolagem interna; 220 px de altura no mobile e 246 px no desktop. Este cenário está validado com fixture, não é um trio de eventos reais do catálogo de 29/10.
+- Contraste e legenda de mídia continuam conforme as regras já aprovadas. Mapa-base Esri e heatmap não alterados.
