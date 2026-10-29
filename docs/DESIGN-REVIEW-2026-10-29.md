@@ -11,3 +11,14 @@ The current internal event page was described as too generic, simplistic and lac
 
 ## Approval state
 Neither proposal is accepted; current production A1.11 remains a working implementation, not a visual design sign-off. Present clickable previews and ask for choice / feedback after QA.
+
+## Prototype delivered for visual discussion (not accepted)
+- Static compare: `design-event-directions.html` with two radio-selectable styles and one real catalog example. Neutral CSS artwork only; data read from events.json. Distinct editorial serif / warm poster treatment versus dark condensed nightlife treatment.
+- The preview has `noindex,nofollow` and is not linked from the main event page. The live detail design remains unchanged.
+- Client approval still pending; this is a response to criticism of generic, simplistic styling, not a claim of design signoff.
+
+## Expanded map preview
+- Existing `map-compare.html` continues comparing Esri vs OSM Standard.
+- `map-vector-compare.html` adds OpenFreeMap Positron, Bright and Dark with MapLibre GL JS. No API key required under current official documentation; third-party terms and uptime are subject to change.
+- Uses same region centres and nighttime data classification; never shows locations as confirmed house coordinates. Does not migrate main map.
+- Provider docs: https://openfreemap.org/quick_start/ and https://openfreemap.org/tos/ (published 2026-10-14).

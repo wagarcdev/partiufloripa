@@ -1,0 +1,72 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Direções visuais — PartiuFloripa</title>
+<style>
+:root{font:15px system-ui,sans-serif;background:#09151a;color:#edf6f5;color-scheme:dark}*{box-sizing:border-box}body{margin:0}
+nav{padding:18px max(18px,calc((100vw - 1140px)/2));display:flex;justify-content:space-between;align-items:center;gap:20px}
+a{color:inherit}nav a{text-decoration:none;font-weight:800}nav a span{color:#4ce3b3}nav small{color:#b5c5c6}
+main{max-width:1140px;margin:0 auto;padding:8px 18px 55px}h1{font-size:clamp(22px,4vw,32px);margin:8px 0}p{line-height:1.55}
+.intro{color:#a9c0c3;max-width:710px}fieldset{display:flex;gap:12px;flex-wrap:wrap;border:0;padding:0;margin:24px 0}
+label{border:1px solid #47636c;border-radius:999px;padding:10px 14px;display:flex;align-items:center;gap:8px;cursor:pointer}
+input[type=radio]{accent-color:#e9ca6f}
+.preview{border-radius:24px;overflow:hidden;min-height:640px;transition:background .3s,color .3s;border:1px solid #344951}
+.preview .hero{min-height:320px;position:relative;isolation:isolate;overflow:hidden;padding:29px clamp(20px,5vw,58px) 34px;display:flex;flex-direction:column;justify-content:space-between}
+.preview .hero:after{content:"";position:absolute;z-index:-1;border:2px solid currentColor;opacity:.13;width:420px;height:420px;border-radius:44% 56% 61% 39%;right:-120px;bottom:-190px;box-shadow:0 0 0 28px #ffffff14,0 0 0 58px #ffffff12,0 0 0 88px #ffffff0e;transform:rotate(-18deg)}
+.overline{display:flex;align-items:center;gap:12px;letter-spacing:2.7px;text-transform:uppercase;font-size:11px;font-weight:900}.overline:before{content:"";width:28px;height:2px;background:currentColor}
+.hero h2{font-size:clamp(62px,12vw,132px);line-height:.86;letter-spacing:-.07em;max-width:760px;margin:32px 0 25px;overflow-wrap:anywhere}
+.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.hero-bottom strong{font-size:clamp(15px,2vw,22px)}.category-art{font-size:48px;filter:drop-shadow(0 9px 15px #0004)}.number{font-size:clamp(60px,8vw,100px);line-height:.8;font-weight:900;letter-spacing:-8px}
+.content{padding:clamp(22px,4vw,50px);display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(18px,4vw,48px)}
+.content h3{font-size:clamp(22px,4vw,38px);margin:4px 0 14px;letter-spacing:-1.2px}.kicker{text-transform:uppercase;font-size:11px;letter-spacing:2px;font-weight:850}
+.time{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #ffffff44;padding:16px 0;gap:10px}
+.time span{font-size:14px}.time strong{font-size:clamp(25px,4vw,40px);font-variant-numeric:tabular-nums}
+.location{padding:18px 0}.location strong{display:block;font-size:23px;margin:7px 0}.location small{font-size:12px;opacity:.78}
+.actions{padding-top:20px}.actions a{display:block;border-radius:3px;padding:16px 20px;text-align:center;font-weight:900;text-decoration:none}
+.disclosure{margin-top:16px;font-size:12px;line-height:1.5;opacity:.82}.footer-note{margin-top:16px;font-size:12px;opacity:.7}
+.preview.editorial{background:#f3edde;color:#182a28}.editorial .hero{background:radial-gradient(circle at 93% 28%,#e9b668 0 10%,transparent 42%),#edcc83;color:#12292b}
+.editorial .hero h2{font-family:Georgia,serif;font-style:italic;font-weight:800;letter-spacing:-.09em}.editorial .number{color:#cc4832}
+.editorial .kicker{color:#a45428}.editorial .time{border-color:#16393652}.editorial .actions a{background:#143d39;color:#e2f9ed}
+.preview.night{background:#0c1826;color:#f0f5f4}.night .hero{background:radial-gradient(ellipse at 95% 15%,#5b37a3,transparent 54%),linear-gradient(120deg,#151b3f,#101b27 70%);color:#f5f2ee}
+.night .hero h2{font-family:Impact,'Arial Narrow',system-ui,sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-.025em;text-shadow:5px 5px 0 #9858ba55}
+.night .number{color:#e5f779}.night .kicker{color:#d9e981}.night .actions a{background:#e5f779;color:#171c28}.night .content{border-top:5px solid #e5f779}
+@media(max-width:660px){nav small{display:none}.content{grid-template-columns:1fr}.hero h2{font-size:clamp(62px,16vw,100px)}.number{font-size:60px}.preview .hero{min-height:340px}}
+</style></head><body><nav><a href="./index.html">partiu<span>floripa.</span></a><small>LAB DE DESIGN · CONCEITOS SEM APROVAÇÃO</small></nav>
+<main><h1>Mais personalidade, menos template.</h1>
+<p class="intro">Duas direções editoriais para a página interna. Nenhuma usa foto de terceiros. Compare a atmosfera, a tipografia e a hierarquia das informações; nada aqui foi homologado.</p>
+<fieldset aria-label="Conceitos"><label><input type="radio" name="concept" value="editorial" checked> Cartaz da Ilha · editorial</label><label><input type="radio" name="concept" value="night"> Noite na Ilha · ousado</label></fieldset>
+<section id="preview" class="preview editorial" aria-label="Prévia de design">
+ <div class="hero">
+  <div class="overline">PartiuFloripa / Eventos em destaque</div>
+  <h2 id="name">Daniel Duncan</h2>
+  <div class="hero-bottom"><div><span class="kicker">Uma noite pra rir</span><div><strong id="date">29 OUT · QUINTA-FEIRA</strong></div></div><span class="category-art" aria-hidden="true">😂</span><span class="number" aria-hidden="true">01</span></div>
+ </div>
+ <div class="content">
+  <div>
+   <div class="kicker">Informações da noite</div>
+   <h3>O que você precisa saber</h3>
+   <div class="time"><span>Abertura da casa</span><strong id="open-time">19:00</strong></div>
+   <div class="time"><span>Início da apresentação</span><strong id="show-time">21:00</strong></div>
+   <div class="location"><span class="kicker">Onde acontece</span><strong id="venue">Floripa Comedy Club</strong><small id="region">Saco Grande · Florianópolis</small></div>
+  </div>
+  <div>
+   <div class="kicker">Bora?</div>
+   <h3>Confira os detalhes</h3>
+   <p>Consulte a fonte do evento antes de sair. Horários, disponibilidade e ingressos podem mudar.</p>
+   <div class="actions"><a id="source" target="_blank" rel="noopener noreferrer">Conferir informações ↗</a></div>
+   <p class="disclosure">Registro experimental, aguardando validação editorial individual. Arte de categoria ilustrativa, sem simular cartaz oficial.</p>
+   <p class="footer-note">* Esta é uma proposta de interface, não o site definitivo.</p>
+  </div>
+ </div>
+</section></main><script>
+document.querySelectorAll('input[name="concept"]').forEach(el=>el.addEventListener("change",()=>{if(el.checked)document.getElementById("preview").className="preview "+el.value}));
+fetch("./events.json").then(r=>r.json()).then(data=>{
+ const e=data.events.find(x=>x.title==="Daniel Duncan");if(!e)return;
+ const fmt=new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"short",weekday:"long",timeZone:"UTC"});
+ document.getElementById("name").textContent=e.title;
+ document.getElementById("date").textContent=fmt.format(new Date(e.date+"T12:00:00Z")).toUpperCase();
+ document.getElementById("open-time").textContent=e.time||"A confirmar";
+ document.getElementById("show-time").textContent=e.showTime||"A confirmar";
+ document.getElementById("venue").textContent=e.venue;
+ document.getElementById("region").textContent=(e.region||"Bairro a confirmar")+" · Florianópolis";
+ document.getElementById("source").href=e.source;
+}).catch(()=>{});
+</script></body></html>
