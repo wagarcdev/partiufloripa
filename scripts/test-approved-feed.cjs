@@ -1,0 +1,23 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {approvedConfig,normalizeFeed,isPublicIPv4,readApprovedJson}=require('./collect-approved-feed.cjs');
+const registry=require('../data/source-registry.json');
+const allowed={id:'fixture',hostname:'example.org',enabled:true,trust:'approved',collectionPermission:'approved',permissionEvidenceUrl:'https://example.org/feed-terms',permissionReviewedAt:'2026-10-29',feedFormat:'json-v1',feedUrl:'https://example.org/feed.json'};
+(async()=>{
+  for(const s of registry.sources)assert.throws(()=>approvedConfig(registry,s.id),/not_authorized/);
+  assert.throws(()=>approvedConfig({...registry,sources:[{...allowed,feedUrl:'https://127.0.0.1/test'}]},'fixture'),/unsafe_feed_url/);
+  assert.throws(()=>approvedConfig({...registry,sources:[{...allowed,feedUrl:'http://example.org/feed.json'}]},'fixture'),/unsafe_feed_url/);
+  assert.throws(()=>approvedConfig({...registry,sources:[{...allowed,permissionEvidenceUrl:''}]},'fixture'),/permission_evidence_required/);
+  const {url,source}=approvedConfig({...registry,sources:[allowed]},'fixture');
+  assert.equal(url.hostname,'example.org');
+  const result=normalizeFeed({events:[{title:'Show',date:'2026-12-02',venue:'Casa',openingTime:'19:00',showTime:'21:00',sourceUrl:'https://example.org/show'}]},source,'2026-10-29T12:00:00Z');
+  assert.equal(result.candidates.length,1);
+  assert.equal(result.candidates[0].sourcePolicy,'approved');
+  assert.equal(result.candidates[0].showTime,'21:00');
+  assert.throws(()=>normalizeFeed({events:[{title:'X',date:'2026-12-02',venue:'Y',sourceUrl:'https://evil.example/show'}]},source,'now'),/external_event_url/);
+  assert.throws(()=>normalizeFeed({events:new Array(301).fill({})},source,'now'),/invalid_feed_schema/);
+  for(const ip of ['127.0.0.1','10.2.3.4','172.16.0.3','192.168.1.2','169.254.1.2','100.64.1.1','192.0.2.1','203.0.113.99','::1'])assert.equal(isPublicIPv4(ip),false,ip);
+  assert.equal(isPublicIPv4('8.8.8.8'),true);
+  await assert.rejects(()=>readApprovedJson(url,{lookup:async()=>[{address:'127.0.0.1'}]}),/unsafe_resolved_address/);
+  console.log('Approved-feed safeguards tests passed (no network requests)');
+})().catch(e=>{console.error(e);process.exitCode=1});

@@ -37,3 +37,13 @@
 **ADR-015 Stable event IDs, readable URLs and SEO in web MVP - accepted (2026-10-29).** Add persistent event identifiers, readable shareable URLs, and event-level SEO/indexing in the current phase. Preserve old links and compatibility with static GitHub Pages. Scope decision only: implementation and acceptance remain pending.
 
 **ADR-016 Publicacao de eventos incompletos apos revisao humana - aceita (2026-10-29).** Eventos com informacoes faltantes podem ser publicados apenas apos revisao humana explicita do registro, com aviso claro dos campos ausentes ou nao confirmados. A revisao deve consultar a pagina especifica e fontes confiaveis quando disponiveis; nao inventar dados. Ausencia de dados nao implica aprovacao automatica de publicacao. Campos minimos, processo detalhado de revisao e QA continuam pendentes. Esta ADR e decisao editorial; nao e implementacao nem homologacao do beta.
+
+**ADR-017 Temporary neutral event artwork - accepted (2026-10-29).** Use neutral category artwork pending rights/provenance review. Do not display unverified event or venue images. This temporary rule supersedes ADR-013 fallback presentation until images are approved individually; no rights approval inferred.
+
+**ADR-018 Compare a second ready-made map layer - accepted (2026-10-29).** Compare the existing Esri basemap with a suitable ready-made alternative using matching event data and heat visualization. Do not change the active basemap before visual review, QA, and provider terms verification.
+
+**ADR-019 Refine internal event details page before approval - accepted (2026-10-29).** Keep card-to-detail navigation; refine UI and provide real mobile/desktop evidence before client visual acceptance. Initial A1.11 implementation is not a homologated design.
+
+**ADR-020 Related-event recommendations deferred - accepted (2026-10-29).** Do not implement same-venue/category recommendations in the current beta scope. Reassess after beta validation.
+
+**ADR-021 Closed beta with a validated subset - accepted (2026-10-29).** Initial validation may use a limited, individually reviewed event subset. This is not authorization to launch, and current public GitHub Pages hosting is not access-controlled. Access strategy, content gates, privacy and QA remain pending before beta acceptance.

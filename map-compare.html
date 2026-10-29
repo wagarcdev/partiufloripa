@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Comparativo de mapas — PartiuFloripa</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{font:15px system-ui,sans-serif;color:#eaf3f5;background:#0c151b}*{box-sizing:border-box}body{margin:0}
+main{max-width:1100px;margin:auto;padding:18px}h1{font-size:clamp(1.5rem,4vw,2rem);margin:0 0 10px}
+p{color:#bdccd0;line-height:1.5}a{color:#8bedd0}
+fieldset{border:1px solid #475a61;border-radius:12px;display:flex;gap:18px;flex-wrap:wrap;margin:14px 0;padding:14px}
+legend{font-weight:700;padding:0 8px}label{cursor:pointer}input{accent-color:#5ce5ba}
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap}input[type=date]{font:inherit;padding:9px;background:#192a32;color:white;border:1px solid #5b777b;border-radius:7px}
+#map{height:min(65vh,620px);min-height:350px;border-radius:14px;overflow:hidden;background:#e1e6e5}
+#status{min-height:25px;font-size:.9rem}small{color:#b7c6ca}.leaflet-container{font:inherit}
+</style></head>
+<body><main><a href="./index.html">← Voltar à agenda</a>
+<h1>Comparação de mapas (não homologada)</h1>
+<p>Mesmos eventos e pontos regionais aproximados, com duas bases cartográficas. Trocar de base não altera a intensidade do calor nem os dados exibidos.</p>
+<fieldset><legend>Camada de mapa</legend>
+<label><input type="radio" name="layer" value="esri" checked> Esri Light Gray (atual)</label>
+<label><input type="radio" name="layer" value="osm"> OpenStreetMap Standard (comparação)</label>
+</fieldset>
+<div class="toolbar"><label for="date">Data dos eventos</label><input type="date" id="date">
+<small>Calor = concentração de eventos cadastrados, não de pessoas.</small></div>
+<p id="status" role="status">Carregando dados…</p><div id="map" aria-label="Mapa de eventos por região"></div>
+<p><small>Protótipo para escolha visual. Coordenadas regionais não representam o endereço exato da casa. Não altera o mapa público principal. OpenStreetMap deve ser usado conforme sua política de tiles e atribuição.</small></p>
+</main><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const regions={"Lagoa da Conceição":[-27.6028,-48.4685],"Centro":[-27.5969,-48.5495],"Jurerê":[-27.4366,-48.4873],"Agronômica":[-27.5787,-48.5420]};
+const providers={
+ esri:{url:"https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors, and the GIS user community'},
+ osm:{url:"https://tile.openstreetmap.org/{z}/{x}/{y}.png",attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}
+};
+let map,tiles,heat,markers,events=[];
+function selectLayer(id){
+ if(!map)return;
+ if(tiles)map.removeLayer(tiles);
+ const p=providers[id];
+ tiles=L.tileLayer(p.url,{maxZoom:id==="osm"?19:16,attribution:p.attribution}).addTo(map);
+}
+function paint(){
+ if(!map)return;
+ if(heat)map.removeLayer(heat);
+ if(markers)map.removeLayer(markers);
+ markers=L.layerGroup().addTo(map);
+ const day=$("date").value,list=events.filter(e=>e.date===day),byRegion={};
+ for(const e of list)if(regions[e.region])(byRegion[e.region]??=[]).push(e);
+ const points=[];
+ for(const [region,arr] of Object.entries(byRegion)){
+  const pos=regions[region];points.push([pos[0],pos[1],Math.min(1,.3+arr.length*.15)]);
+  const tip=arr.map(e=>"<div>"+esc(e.title)+" — "+esc(e.venue)+"</div>").join("");
+  L.marker(pos).bindPopup("<b>"+esc(region)+"</b>"+tip).addTo(markers);
+ }
+ if(points.length&&L.heatLayer)heat=L.heatLayer(points,{radius:34,blur:24,maxZoom:13,max:1,minOpacity:.35,gradient:{0.15:"#16a6bd",0.35:"#21c9a4",0.65:"#f0c967",0.85:"#f08c50",1:"#e45c54"}}).addTo(map);
+ $("status").textContent=list.length+" evento(s) na data; "+points.length+" região(ões) mapeada(s). ";
+ const mappedCount=Object.values(byRegion).reduce((n,a)=>n+a.length,0);if(list.length>mappedCount) $("status").textContent+="Há registros sem geolocalização regional.";
+}
+async function init(){
+ try{
+  if(!window.L)throw Error("Biblioteca do mapa indisponível");
+  const r=await fetch("./events.json",{cache:"no-store"});if(!r.ok)throw Error("Catálogo indisponível");
+  const d=await r.json();events=d.events.filter(e=>e.sourceReview!=="quarantined"&&e.time&&e.time>="18:00"&&regions[e.region]);
+  const dates=[...new Set(events.map(e=>e.date))].sort();
+  $("date").min=dates[0]||"";$("date").max=dates.at(-1)||"";
+  const today=new Intl.DateTimeFormat("en-CA",{year:"numeric",month:"2-digit",day:"2-digit",timeZone:"America/Sao_Paulo"}).format(new Date());
+  $("date").value=dates.find(d=>d>=today)||dates.at(0)||"";
+  map=L.map("map",{scrollWheelZoom:false}).setView([-27.59,-48.52],11);
+  selectLayer("esri");paint();
+ }catch(e){$("status").textContent="Não foi possível carregar o comparativo: "+e.message;}
+}
+document.querySelectorAll("input[name=layer]").forEach(el=>el.addEventListener("change",()=>{if(el.checked)selectLayer(el.value)}));
+$("date").addEventListener("change",paint);init();
+</script></body></html>
