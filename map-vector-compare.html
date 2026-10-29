@@ -38,7 +38,7 @@ function sourceData(){
  }))};
 }
 function addLayers(){
- if(!map||!map.isStyleLoaded())return;
+ if(!map)return;
  const data=sourceData();
  if(!map.getSource("events"))map.addSource("events",{type:"geojson",data});else map.getSource("events").setData(data);
  if(!map.getLayer("heat"))map.addLayer({id:"heat",type:"heatmap",source:"events",paint:{
