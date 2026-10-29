@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),geo=require('./venue-location.js');
+const venues=JSON.parse(fs.readFileSync(path.join(root,'data/venues.json'),'utf8'));
+const events=JSON.parse(fs.readFileSync(path.join(root,'events.json'),'utf8')).events;
+const e=events.find(x=>x.title==='Daniel Duncan');
+assert(e&&e.region==='Saco Grande');
+const p=geo.resolve(e,venues);
+assert(p&&p.venue==='Floripa Comedy Club'&&p.region==='Saco Grande');
+assert(Math.abs(p.lat+27.5346491)<.000001);
+assert.notEqual(p.precision,'exact_entrance');
+assert.equal(geo.resolve({...e,region:'Lagoa da Conceição'},venues).region,'Saco Grande');
+assert.equal(geo.resolve({venue:'Unknown',region:'Florianópolis'},venues),null);
+assert.equal(geo.resolve({venue:'Unknown',region:'Lagoa da Conceição'},venues).precision,'region_centroid');
+assert.equal(geo.resolve(e,{venues:[{...venues.venues[0],coordinates:[0,0]}]}),null);
+console.log('Venue location tests passed');

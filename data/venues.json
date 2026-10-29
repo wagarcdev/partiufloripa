@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "policy": "Complex coordinates are approximate, not entrance-level positions",
+  "venues": [
+    {
+      "id": "floripa-comedy-club",
+      "name": "Floripa Comedy Club",
+      "aliases": [
+        "Comedy Club Floripa"
+      ],
+      "region": "Saco Grande",
+      "address": "Square SC, Rod. José Carlos Daux, 5500, Loja 18, Saco Grande, Florianópolis - SC",
+      "coordinates": [
+        -27.5346491,
+        -48.5093949
+      ],
+      "precision": "venue_complex_approximate",
+      "locationEvidence": [
+        "https://squaresc.com.br/empresa/floripa-comedy-club/",
+        "https://www.benditoguia.com.br/empresa/square-sc-saco-grande-florianopolis"
+      ],
+      "reviewedAt": "2026-10-29",
+      "caveat": "Coordinates for Square SC complex, not exact club entrance"
+    }
+  ]
+}

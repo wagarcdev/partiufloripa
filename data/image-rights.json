@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "policy": "deny-unless-approved-with-rights-evidence",
+  "assets": [
+    {
+      "eventId": "evt-362d49fca53d",
+      "file": "./images/d9f1bf5a34da234e.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/108084/na-onda-convida-rj"
+    },
+    {
+      "eventId": "evt-860906acdacb",
+      "file": "./images/185e5b932c71e5bb.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/108712/brow-malaquias-e-felipe-pansolin-os-folgados-21h"
+    },
+    {
+      "eventId": "evt-8cb45e74aaa8",
+      "file": "./images/c73b2d20916be4f1.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/109308/lua-lima-devaneios-de-um-manezinho-21h"
+    },
+    {
+      "eventId": "evt-3ebafd721fc1",
+      "file": "./images/4f84cc1149ea1873.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h"
+    },
+    {
+      "eventId": "evt-5eb7218d6443",
+      "file": "./images/adb7f6f444e66ace.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/107476/fabio-guere-panico-inutilidade-publica-21h"
+    },
+    {
+      "eventId": "evt-af92d277b7ec",
+      "file": "./images/1cf64fbc6b68de90.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/107477/cicero-viana-aqui-tem-preparo-21h"
+    },
+    {
+      "eventId": "evt-37afcce322db",
+      "file": "./images/7cafd24516e7c909.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/109171/nathi-gaiteira-amor-humor-e-modao-21h"
+    },
+    {
+      "eventId": "evt-401f1a110051",
+      "file": "./images/08412e3f79fdfe56.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/110727/humor-huana-reducao-de-danos-com-bob-rodrigues-21h"
+    },
+    {
+      "eventId": "evt-76f759a2b51c",
+      "file": "./images/c44cc3c865ffdb06.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/109494/arianna-nutt-de-repente-40-21h"
+    },
+    {
+      "eventId": "evt-56db956570ff",
+      "file": "./images/cdd2ad02849c05a6.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/111512/festival-open-mic-o-melhor-voce-escolhe-21h"
+    },
+    {
+      "eventId": "evt-59cedc637478",
+      "file": "./images/297ef980f8820632.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/109496/irineu-nicoletti-meio-tanso-21h"
+    },
+    {
+      "eventId": "evt-b8678d2f037d",
+      "file": "./images/7d33525eefce8e4d.webp",
+      "rightsStatus": "pending",
+      "rightsEvidenceUrl": null,
+      "license": null,
+      "sourceEventUrl": "https://www.pensanoevento.com.br/eventos/105680/marcio-donato-4-amigos-21h"
+    }
+  ]
+}
