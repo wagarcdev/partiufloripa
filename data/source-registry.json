@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "defaultPolicy": "deny",
+  "sources": [
+    {
+      "id": "pensanoevento",
+      "hostname": "www.pensanoevento.com.br",
+      "trust": "candidate",
+      "collectionPermission": "unverified",
+      "enabled": false
+    },
+    {
+      "id": "musicpark",
+      "hostname": "musicpark.com.br",
+      "trust": "candidate",
+      "collectionPermission": "unverified",
+      "enabled": false
+    },
+    {
+      "id": "emfloripa",
+      "hostname": "emfloripa.ia.br",
+      "trust": "quarantined",
+      "collectionPermission": "unverified",
+      "enabled": false
+    }
+  ]
+}
