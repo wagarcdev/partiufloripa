@@ -24,3 +24,13 @@
 - Fotos genéricas da casa são de bancos de imagens, não necessariamente da casa propriamente dita.
 - A maioria dos eventos ainda não tem foto própria licenciada; não simular autorização para reutilizar cartazes da plataforma de ingressos.
 - O beta e auditoria editorial permanecem pendentes de homologação.
+
+## Publicacao e readback real
+- Commit `99dd3ad` aplicado no `main`, GitHub Pages Actions: https://github.com/wagarcdev/partiufloripa/actions/runs/40969632205 (sucesso).
+- Node CI validou 14 casas com imagem generica fixa por casa e 4 registros com foto propria relacionada a artista/producao, total 2 novos arquivos WebP de arquivo de artistas.
+- Chrome headless na versao publicada em viewports 390x844 e 1440x900: pagina inicial HTTP 200; 15 cards renderizados, 0 imagens quebradas, 0 erros JavaScript e 0 scroll horizontal.
+- Todos os anuncios sem foto especifica do Floripa Comedy Club usam uma unica imagem; mesmo teste para Bar do Espartano.
+- Teste do catalogo de novembro: 38 cards, 4 com foto de arquivo de artista (3 datas de Gregorio Duvivier e um evento com Vitor Kley). 4 imagens carregadas; 2 arquivos-fonte distintos; nenhum erro de pagina.
+- Detalhes internos de Gregorio Duvivier, Vitor Kley e Daniel Duncan: HTTP 200, foto carregada, creditos Wikimedia disponiveis nos casos de arquivo. Creditos: 11 fotos Pexels e 2 arquivos Commons.
+- Screenshots mobile de novembro e das paginas internas analisados. Fotos de arquivo nao se apresentam como fotos dos shows especificos de Florianopolis.
+- Este teste nao equivale a homologacao de todas as outras fotos, dos eventos ou do beta; os cartazes legados seguem nao aprovados.
