@@ -22,3 +22,9 @@ Run real browser QA for old/new event links, neutral artwork, filters, accessibi
 - Historical event links using query parameters remain supported by evento.html.
 - Unreviewed events remain noindex,follow; only an explicitly reviewed event with status=verified is eligible for index,follow. This is infrastructure, not an editorial claim of verification.
 - SEO path generation was tested locally, but visual/browser QA and production acceptance are still pending.
+
+## User-evidenced editorial corrections (incremental)
+- MUNDO M: event page reports 13 Nov 2026 at 22:00, Stage Music Park; source changed from generic Music Park calendar to the specific Pensa no Evento URL. Existing persisted event ID and slug unchanged.
+- Daniel Duncan: 29 Oct 2026 venue opening 19:00, show 21:00; region Saco Grande. Detail page can display a separate show time when available. Other records are not assumed to have this field.
+- All 5 entries sourced only from emfloripa.ia.br have sourceReview=quarantined and are excluded from the current agenda pending independent corroboration. Historical data remains in JSON and routes remain noindex; no editorial approval was inferred.
+- This does not complete the overall 56-event audit or formal beta acceptance.

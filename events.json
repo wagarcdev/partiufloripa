@@ -210,16 +210,18 @@
     },
     {
       "date": "2026-10-29",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Daniel Duncan",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h",
-      "region": "Florianópolis",
+      "region": "Saco Grande",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/4f84cc1149ea1873.webp",
       "id": "evt-3ebafd721fc1",
-      "slug": "daniel-duncan-evt-3ebafd721fc1"
+      "slug": "daniel-duncan-evt-3ebafd721fc1",
+      "showTime": "21:00",
+      "lastVerifiedAt": "2026-10-29"
     },
     {
       "date": "2026-10-30",
@@ -327,15 +329,16 @@
     },
     {
       "date": "2026-11-13",
-      "time": "",
+      "time": "22:00",
       "title": "MUNDO M",
-      "venue": "Indoor Music Park",
+      "venue": "Stage Music Park",
       "category": "Shows",
-      "source": "https://musicpark.com.br/agenda/",
+      "source": "https://www.pensanoevento.com.br/eventos/109366/mundo-m-florianopolis",
       "region": "Jurerê",
       "note": "Horário a confirmar na fonte.",
       "id": "evt-628f76d5f85e",
-      "slug": "mundo-m-evt-628f76d5f85e"
+      "slug": "mundo-m-evt-628f76d5f85e",
+      "lastVerifiedAt": "2026-10-29"
     },
     {
       "date": "2026-11-14",
@@ -623,7 +626,8 @@
       "region": "Florianópolis",
       "note": "",
       "id": "evt-d13a03ca392e",
-      "slug": "show-de-fresno-evt-d13a03ca392e"
+      "slug": "show-de-fresno-evt-d13a03ca392e",
+      "sourceReview": "quarantined"
     },
     {
       "date": "2026-11-07",
@@ -635,7 +639,8 @@
       "region": "Florianópolis",
       "note": "Entrada gratuita segundo a fonte.",
       "id": "evt-aad7b4c02ecb",
-      "slug": "3o-festival-cultural-chines-de-sc-evt-aad7b4c02ecb"
+      "slug": "3o-festival-cultural-chines-de-sc-evt-aad7b4c02ecb",
+      "sourceReview": "quarantined"
     },
     {
       "date": "2026-11-07",
@@ -647,7 +652,8 @@
       "region": "Florianópolis",
       "note": "Evento em 7 e 8 de novembro.",
       "id": "evt-7ad7b0fc7589",
-      "slug": "haru-matsuri-4a-edicao-evt-7ad7b0fc7589"
+      "slug": "haru-matsuri-4a-edicao-evt-7ad7b0fc7589",
+      "sourceReview": "quarantined"
     },
     {
       "date": "2026-11-13",
@@ -659,7 +665,8 @@
       "region": "Florianópolis",
       "note": "Evento de 13 a 15 de novembro.",
       "id": "evt-fb254317e98a",
-      "slug": "feira-de-ceramica-evt-fb254317e98a"
+      "slug": "feira-de-ceramica-evt-fb254317e98a",
+      "sourceReview": "quarantined"
     },
     {
       "date": "2026-11-13",
@@ -671,7 +678,8 @@
       "region": "Florianópolis",
       "note": "Evento de 13 a 15 de novembro.",
       "id": "evt-368fb60b6ca1",
-      "slug": "ponte-de-palavras-encontro-literario-evt-368fb60b6ca1"
+      "slug": "ponte-de-palavras-encontro-literario-evt-368fb60b6ca1",
+      "sourceReview": "quarantined"
     },
     {
       "date": "2026-11-01",
