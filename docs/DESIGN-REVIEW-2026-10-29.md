@@ -22,3 +22,8 @@ Neither proposal is accepted; current production A1.11 remains a working impleme
 - `map-vector-compare.html` adds OpenFreeMap Positron, Bright and Dark with MapLibre GL JS. No API key required under current official documentation; third-party terms and uptime are subject to change.
 - Uses same region centres and nighttime data classification; never shows locations as confirmed house coordinates. Does not migrate main map.
 - Provider docs: https://openfreemap.org/quick_start/ and https://openfreemap.org/tos/ (published 2026-10-14).
+
+## Client feedback (2026-10-29, second review)
+- User clarified Esri is already satisfactory and approved as primary basemap. ADR-025 supersedes ADR-022's open selection without removing comparison prototypes.
+- The existing night/expressive prototype underperformed the light editorial version in information readability and color contrast.
+- **Accepted directional preference, not visual signoff:** preserve the editorial hierarchy and legibility. Prototype an editorial dark variant with higher contrast, readable type and restrained accents. Do not replace the live event page until explicitly homologated.
