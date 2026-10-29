@@ -50,9 +50,34 @@ a.event-card:hover{border-color:#8ead62}
 .event-overlays{flex-wrap:wrap}
 .event-featured .event-media{min-height:170px}
 @media(max-width:570px){.event-featured .event-media{min-height:150px}.event-search .event-media{min-height:126px}}
+
+/* PartiuFloripa / editorial venue popups, shared visual language with event cards */
+.leaflet-popup.pf-map-popup .leaflet-popup-content-wrapper{background:#101f24;color:#f5f7f1;padding:0;border:1px solid #4b6466;border-radius:15px;box-shadow:0 15px 42px #0b1c26a8;overflow:hidden}
+.leaflet-popup.pf-map-popup .leaflet-popup-content{margin:0!important;width:auto!important;max-width:310px}
+.leaflet-popup.pf-map-popup .leaflet-popup-tip{background:#101f24;border:1px solid #4b6466}
+.leaflet-popup.pf-map-popup .leaflet-popup-close-button{right:9px;top:7px;width:27px;height:27px;line-height:24px;font-size:21px;color:#f5e8c4;z-index:5;background:#183238;border-radius:50%;text-align:center}
+.leaflet-popup.pf-map-popup .leaflet-popup-close-button:hover{color:#fff;background:#325b5d}
+.pf-map-card{width:100%;color:#f5f7f1;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.pf-map-header{background:linear-gradient(110deg,#365d5c,#25464c);padding:16px 36px 15px 15px;border-bottom:3px solid #f5d78f}
+.pf-map-overline{font-size:9px;font-weight:850;letter-spacing:1.65px;color:#f5d78f;line-height:1.5}
+.pf-map-heading{font:bold italic 25px/1.1 Georgia,serif;letter-spacing:-.7px;margin:7px 0;color:#fffdf5;overflow-wrap:anywhere}
+.pf-map-location{font-size:10px;line-height:1.4;color:#d8eae2}
+.pf-map-events{padding:8px 10px 9px;display:grid;gap:7px}
+.pf-map-events-scroll{max-height:275px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#64817e #101f24}
+.pf-map-event{display:grid;grid-template-columns:82px minmax(0,1fr);gap:10px;align-items:start;background:#192f36;border:1px solid #34515a;border-radius:9px;padding:7px}
+.pf-map-photo{width:82px;height:93px;border-radius:6px;object-fit:cover;background:#2b454e;display:block}
+.pf-map-event-body{min-width:0;display:flex;flex-direction:column;align-items:start;gap:3px}
+.pf-map-category{font-size:9px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#f5d78f}
+.pf-map-event-title{font-size:13px;font-weight:800;line-height:1.3;color:#fffdf5;overflow-wrap:anywhere}
+.pf-map-meta,.pf-map-venue{font-size:10px;color:#dce9e5;line-height:1.35}
+.pf-map-photo-hint{font-size:9px;color:#c2d9d8;line-height:1.3}
+.pf-map-event-link{font-size:11px;font-weight:850;text-decoration:none;color:#f5d78f;display:inline-flex;gap:5px;padding:4px 0 2px;min-height:24px;align-items:center}
+.pf-map-event-link:hover{text-decoration:underline;color:#ffe9ad}
+.pf-map-event-link:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(max-width:570px){.leaflet-popup.pf-map-popup .leaflet-popup-content{max-width:min(310px,calc(100vw - 55px))}.pf-map-header{padding-top:13px;padding-bottom:12px}.pf-map-heading{font-size:22px}.pf-map-photo{width:74px;height:90px}.pf-map-event{grid-template-columns:74px minmax(0,1fr)}.pf-map-events-scroll{max-height:235px}}
 </style></head><body><header class="mast"><div class="wrap"><nav class="nav"><div class="brand">partiu<span>floripa.</span></div><div class="navright">A agenda da ilha 🌴</div></nav><div class="intro"><label class="search"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Buscar evento, artista ou lugar..." aria-label="Buscar evento, artista ou lugar"></label></div></div></header>
 <main class="main wrap"><section><div class="view-tabs" role="tablist" aria-label="Visualização"><button id="tab-list" class="view-tab active" role="tab" aria-selected="true">Eventos</button><button id="tab-map" class="view-tab" role="tab" aria-selected="false">Mapa de calor</button></div><div id="list-panel"><div class="section-head"><div><h2 id="featured-title">Hoje em Floripa</h2><p id="featured-subtitle">O que está acontecendo na cidade</p></div></div><div id="featured" class="strip"><div class="empty">Carregando agenda...</div></div></div><div id="map-panel" hidden><div class="map-toolbar"><div><strong>Onde estão os eventos da noite?</strong><p>Mapa Esri · casas identificadas ou bairros aproximados</p></div><label class="night-label">Noite de <input id="night-date" type="date" aria-label="Escolher noite no calendário"></label></div><div id="night-map" aria-label="Mapa interativo de calor dos eventos noturnos de Florianópolis"></div><p id="map-status" class="map-status">Selecione uma noite para visualizar os eventos.</p><div class="heat-legend"><span>Menor concentração</span><span class="heat-ramp"></span><span>Maior concentração</span></div></div></section><div class="divider"></div><section><div class="section-head"><div><h2>Explore a programação</h2><p id="count">Outubro e novembro de 2026</p></div><div class="months"><button data-month="2026-10" class="active">Outubro</button><button data-month="2026-11">Novembro</button></div></div><div class="filters"><select id="category" aria-label="Filtrar categoria"><option value="">Todas as categorias</option></select><select id="region" aria-label="Filtrar região"><option value="">Todas as regiões</option></select><select id="period" aria-label="Filtrar horário"><option value="">Qualquer horário</option><option value="day">Diurno</option><option value="night">Noturno</option></select></div><div id="agenda"><div class="empty">Carregando programação...</div></div></section><div class="notice">Agenda experimental de outubro e novembro de 2026. Os dados são uma amostra, não uma cobertura completa da cidade. Confira detalhes, alterações e disponibilidade na fonte oficial antes de sair. Capas gráficas são ilustrativas quando não existe uma imagem de evento validada.</div></main><footer class="foot"><div class="wrap">PartiuFloripa · Descubra o que fazer na ilha. <a href="https://github.com/wagarcdev/partiufloripa">Projeto e fontes</a> · <a href="./creditos.html">Créditos das fotos</a>.</div></footer>
-<script src="./scripts/venue-location.js"></script><script src="./scripts/media-selection.js"></script><script>
+<script src="./scripts/venue-location.js"></script><script src="./scripts/media-selection.js"></script><script src="./scripts/map-popup.js"></script><script>
 let events=[],venueDirectory={venues:[]},imageRights={assets:[]},categoryPhotos={items:[]},venueMedia={items:[]},eventPhotos={assets:[]},month="2026-10";const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));const dateFmt=new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long",timeZone:"UTC"});const dateShort=new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"short",timeZone:"UTC"});const today=new Intl.DateTimeFormat("en-CA",{year:"numeric",month:"2-digit",day:"2-digit",timeZone:"America/Sao_Paulo"}).format(new Date());const categoryIcons={"Baladas":"🪩","Shows":"🎤","Humor":"😂","Teatro":"🎭","Cinema":"🎬","Dança":"💃","Festivais":"🎪","Feiras":"🛍️","Cultura":"📚"};const venueImages={"Bar do Espartano":"./images/66b79f7b747f8c3c.webp"};function eventUrl(e){return "./evento/"+encodeURIComponent(e.slug)+"/"};
 function displayRegion(e){return PartiuGeo.resolve(e,venueDirectory)?.region||e.region}
 function card(e,variant="search"){
@@ -96,9 +121,10 @@ function paintNightMap(){
  for(const {pos,items} of groups.values()){
   const position=[pos.lat,pos.lng];bounds.push(position);
   points.push([pos.lat,pos.lng,Math.min(1,.3+items.length*.15)]);
-  const caption=pos.precision==="region_centroid"?"Localização aproximada do bairro":"Localização aproximada do complexo da casa";
-  const detail=items.map(e=>'<div class="pop-item">'+esc(e.title)+' · '+esc(e.time)+' <a href="'+esc(eventUrl(e))+'">Ver evento ↗</a></div>').join("");
-  L.circleMarker(position,{radius:8,weight:2,color:"#fff",fillColor:"#008a78",fillOpacity:1}).bindPopup('<strong>'+esc(pos.venue||pos.region)+'</strong><p>'+esc(caption)+'</p>'+detail,{maxWidth:280}).addTo(venueMarkers);
+  const popupHtml=PartiuMapPopup.render(pos,items,e=>PartiuMedia.select(e,{categoryPhotos,venueMedia,eventPhotos,imageRights}));
+  L.circleMarker(position,{radius:8,weight:2,color:"#fff",fillColor:"#008a78",fillOpacity:1})
+   .bindPopup(popupHtml,{className:"pf-map-popup",maxWidth:310,minWidth:265,autoPan:true,autoPanPadding:[12,12]})
+   .addTo(venueMarkers);
  }
  if(points.length&&typeof L.heatLayer==="function")heatLayer=L.heatLayer(points,{radius:34,blur:24,maxZoom:13,max:1,minOpacity:.35,gradient:{0.15:"#16a6bd",0.35:"#21c9a4",0.65:"#f0c967",0.85:"#f08c50",1:"#e45c54"}}).addTo(mapInstance);
  if(bounds.length>1)mapInstance.fitBounds(bounds,{padding:[45,45],maxZoom:12});

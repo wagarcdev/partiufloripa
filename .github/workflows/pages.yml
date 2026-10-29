@@ -23,6 +23,7 @@ jobs:
       - run: node scripts/test-image-rights.cjs
       - run: node scripts/test-licensed-photos.cjs
       - run: node scripts/test-media-selection.cjs
+      - run: node scripts/test-map-popup.cjs
   deploy:
     needs: validate
     runs-on: ubuntu-latest

@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict');
+const {render}=require('./map-popup.js');
+const pos={venue:'Floripa Comedy Club',region:'Saco Grande',precision:'venue_complex_approximate'};
+const single={title:'Daniel Duncan',category:'Humor',date:'2026-10-29',time:'19:00',showTime:'21:00',venue:'Floripa Comedy Club',slug:'daniel-duncan-evt-abc'};
+const licensed=()=>({kind:'illustrative',file:'./assets/photos/humor-3.webp'});
+const html=render(pos,[single],licensed);
+for(const key of ['pf-map-card','pf-map-photo','Daniel Duncan','Floripa Comedy Club','29/10','19:00','show 21:00','Foto ilustrativa','Ver evento','/evento/daniel-duncan-evt-abc/','Local aproximado da casa'])assert(html.includes(key),key);
+assert(!html.includes('pf-map-events-scroll'));
+const many=render(pos,[single,{...single,title:'Segundo artista',slug:'second-evt-def'},{...single,title:'Terceiro artista',slug:'third-evt-ghi'}],licensed);
+assert(many.includes('pf-map-events-scroll'));
+assert.equal((many.match(/class="pf-map-event"/g)||[]).length,3);
+const xss=render({venue:'<img src=x onerror=alert(1)>',precision:'region_centroid',region:'Centro'},[{...single,title:'<script>alert(1)</script>',slug:'../../evil'}],()=>({kind:'artist',file:'https://evil.example/tracker.png'}));
+assert(xss.includes('&lt;script&gt;')&&xss.includes('Ponto aproximado do bairro'));
+assert(!xss.includes('<script>')&&!xss.includes('https://evil.example')&&!xss.includes('href="./evento/../../'));
+assert(xss.includes('./assets/covers/cultura.svg'));
+console.log('Map popup tests passed: single, multiple, media selection, escaping, safe navigation');
