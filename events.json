@@ -9,7 +9,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/111987/boiler-deck-37",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-a35373c81ac5"
     },
     {
       "date": "2026-10-30",
@@ -19,7 +20,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/108694/pop-hitz",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-54c9de57c44b"
     },
     {
       "date": "2026-10-31",
@@ -29,7 +31,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/108699/baila",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-10d554498659"
     },
     {
       "date": "2026-11-01",
@@ -39,7 +42,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110488/hype-ed-especial-elite",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-d39809f47b90"
     },
     {
       "date": "2026-11-05",
@@ -49,7 +53,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110916/inferninho",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-7486ca6d39b6"
     },
     {
       "date": "2026-11-06",
@@ -59,7 +64,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/espartanofloripa",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-9d90a0eb82b0"
     },
     {
       "date": "2026-11-07",
@@ -69,7 +75,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110927/hype",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-4ff37533bed9"
     },
     {
       "date": "2026-11-12",
@@ -79,7 +86,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110917/balance",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-a8db01615de1"
     },
     {
       "date": "2026-11-13",
@@ -89,7 +97,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110921/baile-do-olimpo",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-82ff8748a60e"
     },
     {
       "date": "2026-11-14",
@@ -100,7 +109,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/108084/na-onda-convida-rj",
       "region": "Lagoa da Conceição",
       "note": "",
-      "image": "./images/d9f1bf5a34da234e.webp"
+      "image": "./images/d9f1bf5a34da234e.webp",
+      "id": "evt-362d49fca53d"
     },
     {
       "date": "2026-11-20",
@@ -110,7 +120,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110922/hype",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-7495d9df5930"
     },
     {
       "date": "2026-11-21",
@@ -120,7 +131,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110924/dj-vs-deck",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-4e523a3e1344"
     },
     {
       "date": "2026-11-26",
@@ -130,7 +142,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110919/close-friends",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-d1212145d4ed"
     },
     {
       "date": "2026-11-27",
@@ -140,7 +153,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110923/baile-do-olimpo",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-824adfa07292"
     },
     {
       "date": "2026-11-28",
@@ -150,7 +164,8 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/eventos/110925/pop-hitz",
       "region": "Lagoa da Conceição",
-      "note": ""
+      "note": "",
+      "id": "evt-b8f5589b5bf2"
     },
     {
       "date": "2026-10-27",
@@ -161,7 +176,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/108712/brow-malaquias-e-felipe-pansolin-os-folgados-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/185e5b932c71e5bb.webp"
+      "image": "./images/185e5b932c71e5bb.webp",
+      "id": "evt-860906acdacb"
     },
     {
       "date": "2026-10-28",
@@ -172,7 +188,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/109308/lua-lima-devaneios-de-um-manezinho-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/c73b2d20916be4f1.webp"
+      "image": "./images/c73b2d20916be4f1.webp",
+      "id": "evt-8cb45e74aaa8"
     },
     {
       "date": "2026-10-29",
@@ -183,7 +200,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/4f84cc1149ea1873.webp"
+      "image": "./images/4f84cc1149ea1873.webp",
+      "id": "evt-3ebafd721fc1"
     },
     {
       "date": "2026-10-30",
@@ -194,7 +212,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/107476/fabio-guere-panico-inutilidade-publica-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/adb7f6f444e66ace.webp"
+      "image": "./images/adb7f6f444e66ace.webp",
+      "id": "evt-5eb7218d6443"
     },
     {
       "date": "2026-10-31",
@@ -205,7 +224,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/107477/cicero-viana-aqui-tem-preparo-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/1cf64fbc6b68de90.webp"
+      "image": "./images/1cf64fbc6b68de90.webp",
+      "id": "evt-af92d277b7ec"
     },
     {
       "date": "2026-11-01",
@@ -216,7 +236,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/109171/nathi-gaiteira-amor-humor-e-modao-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/7cafd24516e7c909.webp"
+      "image": "./images/7cafd24516e7c909.webp",
+      "id": "evt-37afcce322db"
     },
     {
       "date": "2026-11-03",
@@ -227,7 +248,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110727/humor-huana-reducao-de-danos-com-bob-rodrigues-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/08412e3f79fdfe56.webp"
+      "image": "./images/08412e3f79fdfe56.webp",
+      "id": "evt-401f1a110051"
     },
     {
       "date": "2026-11-04",
@@ -238,7 +260,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/109494/arianna-nutt-de-repente-40-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/c44cc3c865ffdb06.webp"
+      "image": "./images/c44cc3c865ffdb06.webp",
+      "id": "evt-76f759a2b51c"
     },
     {
       "date": "2026-11-05",
@@ -249,7 +272,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/111512/festival-open-mic-o-melhor-voce-escolhe-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/cdd2ad02849c05a6.webp"
+      "image": "./images/cdd2ad02849c05a6.webp",
+      "id": "evt-56db956570ff"
     },
     {
       "date": "2026-11-06",
@@ -260,7 +284,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/109496/irineu-nicoletti-meio-tanso-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/297ef980f8820632.webp"
+      "image": "./images/297ef980f8820632.webp",
+      "id": "evt-59cedc637478"
     },
     {
       "date": "2026-11-07",
@@ -271,7 +296,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/105680/marcio-donato-4-amigos-21h",
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
-      "image": "./images/7d33525eefce8e4d.webp"
+      "image": "./images/7d33525eefce8e4d.webp",
+      "id": "evt-b8678d2f037d"
     },
     {
       "date": "2026-11-13",
@@ -281,7 +307,8 @@
       "category": "Shows",
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
-      "note": "Horário a confirmar na fonte."
+      "note": "Horário a confirmar na fonte.",
+      "id": "evt-628f76d5f85e"
     },
     {
       "date": "2026-11-14",
@@ -291,7 +318,8 @@
       "category": "Shows",
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
-      "note": "Horário a confirmar na fonte."
+      "note": "Horário a confirmar na fonte.",
+      "id": "evt-68c009490966"
     },
     {
       "date": "2026-11-14",
@@ -301,7 +329,8 @@
       "category": "Baladas",
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
-      "note": "Horário a confirmar na fonte."
+      "note": "Horário a confirmar na fonte.",
+      "id": "evt-28f829da39c2"
     },
     {
       "date": "2026-11-10",
@@ -311,7 +340,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-a2fa2c2379b5"
     },
     {
       "date": "2026-11-11",
@@ -321,7 +351,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-d6de7aa71729"
     },
     {
       "date": "2026-11-12",
@@ -331,7 +362,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-86de8aca90b1"
     },
     {
       "date": "2026-11-13",
@@ -341,7 +373,8 @@
       "category": "Cinema",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-b8aa6b37dcc2"
     },
     {
       "date": "2026-11-13",
@@ -351,7 +384,8 @@
       "category": "Shows",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-fa30d5d7081c"
     },
     {
       "date": "2026-11-14",
@@ -361,7 +395,8 @@
       "category": "Cinema",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-4c4ed12fddd7"
     },
     {
       "date": "2026-11-19",
@@ -371,7 +406,8 @@
       "category": "Dança",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-1b056db0cbb9"
     },
     {
       "date": "2026-11-20",
@@ -381,7 +417,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-ada5cbfbfcde"
     },
     {
       "date": "2026-11-21",
@@ -391,7 +428,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-61b491eb7c76"
     },
     {
       "date": "2026-11-22",
@@ -401,7 +439,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-697e839c07b7"
     },
     {
       "date": "2026-11-21",
@@ -411,7 +450,8 @@
       "category": "Dança",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-de4c14b00bd8"
     },
     {
       "date": "2026-11-26",
@@ -421,7 +461,8 @@
       "category": "Shows",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-7c83d7b8a97e"
     },
     {
       "date": "2026-11-28",
@@ -431,7 +472,8 @@
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-9a01a5e083e8"
     },
     {
       "date": "2026-11-28",
@@ -441,7 +483,8 @@
       "category": "Shows",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte."
+      "note": "Confira sessões e ingressos na fonte.",
+      "id": "evt-1546dcd99ecd"
     },
     {
       "date": "2026-10-30",
@@ -451,7 +494,8 @@
       "category": "Baladas",
       "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
       "region": "Centro",
-      "note": "Festival de 30/10 a 01/11; horários específicos sujeitos a confirmação."
+      "note": "Festival de 30/10 a 01/11; horários específicos sujeitos a confirmação.",
+      "id": "evt-ebb62fc37d0b"
     },
     {
       "date": "2026-10-31",
@@ -461,7 +505,8 @@
       "category": "Baladas",
       "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
       "region": "Centro",
-      "note": ""
+      "note": "",
+      "id": "evt-4a29531bb042"
     },
     {
       "date": "2026-11-01",
@@ -471,7 +516,8 @@
       "category": "Baladas",
       "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
       "region": "Centro",
-      "note": ""
+      "note": "",
+      "id": "evt-252e05950d25"
     },
     {
       "date": "2026-10-30",
@@ -481,7 +527,8 @@
       "category": "Shows",
       "source": "https://guiafloripa.com.br/agenda/Shows/",
       "region": "Centro",
-      "note": "Show previsto para 21h30; abertura da casa às 20h."
+      "note": "Show previsto para 21h30; abertura da casa às 20h.",
+      "id": "evt-9980b1fd85a8"
     },
     {
       "date": "2026-10-31",
@@ -491,7 +538,8 @@
       "category": "Shows",
       "source": "https://tocaonde.com.br/guides/halloween-2026-florianopolis",
       "region": "Agronômica",
-      "note": ""
+      "note": "",
+      "id": "evt-8eade7ba7bfe"
     },
     {
       "date": "2026-10-31",
@@ -501,7 +549,8 @@
       "category": "Baladas",
       "source": "https://tocaonde.com.br/guides/halloween-2026-florianopolis",
       "region": "Florianópolis",
-      "note": ""
+      "note": "",
+      "id": "evt-32fc50b56d0e"
     },
     {
       "date": "2026-11-01",
@@ -511,7 +560,8 @@
       "category": "Baladas",
       "source": "https://www.eventoon.com.br/cidade/florianopolis-sc",
       "region": "Jurerê",
-      "note": ""
+      "note": "",
+      "id": "evt-e2c338dd3749"
     },
     {
       "date": "2026-11-06",
@@ -521,7 +571,8 @@
       "category": "Shows",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": ""
+      "note": "",
+      "id": "evt-d13a03ca392e"
     },
     {
       "date": "2026-11-07",
@@ -531,7 +582,8 @@
       "category": "Festivais",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Entrada gratuita segundo a fonte."
+      "note": "Entrada gratuita segundo a fonte.",
+      "id": "evt-aad7b4c02ecb"
     },
     {
       "date": "2026-11-07",
@@ -541,7 +593,8 @@
       "category": "Festivais",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Evento em 7 e 8 de novembro."
+      "note": "Evento em 7 e 8 de novembro.",
+      "id": "evt-7ad7b0fc7589"
     },
     {
       "date": "2026-11-13",
@@ -551,7 +604,8 @@
       "category": "Feiras",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Evento de 13 a 15 de novembro."
+      "note": "Evento de 13 a 15 de novembro.",
+      "id": "evt-fb254317e98a"
     },
     {
       "date": "2026-11-13",
@@ -561,7 +615,8 @@
       "category": "Cultura",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Evento de 13 a 15 de novembro."
+      "note": "Evento de 13 a 15 de novembro.",
+      "id": "evt-368fb60b6ca1"
     },
     {
       "date": "2026-11-01",
@@ -571,7 +626,8 @@
       "category": "Baladas",
       "source": "https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/",
       "region": "Centro",
-      "note": "Data obtida na página individual do evento, na seção Detalhes."
+      "note": "Data obtida na página individual do evento, na seção Detalhes.",
+      "id": "evt-579a08463320"
     }
   ]
 }
