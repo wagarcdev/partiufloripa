@@ -10,7 +10,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/111987/boiler-deck-37",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-a35373c81ac5"
+      "id": "evt-a35373c81ac5",
+      "slug": "boiler-deck-37-evt-a35373c81ac5"
     },
     {
       "date": "2026-10-30",
@@ -21,7 +22,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/108694/pop-hitz",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-54c9de57c44b"
+      "id": "evt-54c9de57c44b",
+      "slug": "pop-hitz-evt-54c9de57c44b"
     },
     {
       "date": "2026-10-31",
@@ -32,7 +34,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/108699/baila",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-10d554498659"
+      "id": "evt-10d554498659",
+      "slug": "baila-evt-10d554498659"
     },
     {
       "date": "2026-11-01",
@@ -43,7 +46,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110488/hype-ed-especial-elite",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-d39809f47b90"
+      "id": "evt-d39809f47b90",
+      "slug": "hype-ed-especial-elite-evt-d39809f47b90"
     },
     {
       "date": "2026-11-05",
@@ -54,7 +58,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110916/inferninho",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-7486ca6d39b6"
+      "id": "evt-7486ca6d39b6",
+      "slug": "inferninho-evt-7486ca6d39b6"
     },
     {
       "date": "2026-11-06",
@@ -65,7 +70,8 @@
       "source": "https://www.pensanoevento.com.br/espartanofloripa",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-9d90a0eb82b0"
+      "id": "evt-9d90a0eb82b0",
+      "slug": "trippy-anos-2000-evt-9d90a0eb82b0"
     },
     {
       "date": "2026-11-07",
@@ -76,7 +82,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110927/hype",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-4ff37533bed9"
+      "id": "evt-4ff37533bed9",
+      "slug": "hype-evt-4ff37533bed9"
     },
     {
       "date": "2026-11-12",
@@ -87,7 +94,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110917/balance",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-a8db01615de1"
+      "id": "evt-a8db01615de1",
+      "slug": "balance-evt-a8db01615de1"
     },
     {
       "date": "2026-11-13",
@@ -98,7 +106,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110921/baile-do-olimpo",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-82ff8748a60e"
+      "id": "evt-82ff8748a60e",
+      "slug": "baile-do-olimpo-evt-82ff8748a60e"
     },
     {
       "date": "2026-11-14",
@@ -110,7 +119,8 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "image": "./images/d9f1bf5a34da234e.webp",
-      "id": "evt-362d49fca53d"
+      "id": "evt-362d49fca53d",
+      "slug": "na-onda-convida-atracao-a-confirmar-evt-362d49fca53d"
     },
     {
       "date": "2026-11-20",
@@ -121,7 +131,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110922/hype",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-7495d9df5930"
+      "id": "evt-7495d9df5930",
+      "slug": "hype-evt-7495d9df5930"
     },
     {
       "date": "2026-11-21",
@@ -132,7 +143,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110924/dj-vs-deck",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-4e523a3e1344"
+      "id": "evt-4e523a3e1344",
+      "slug": "dj-vs-deck-evt-4e523a3e1344"
     },
     {
       "date": "2026-11-26",
@@ -143,7 +155,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110919/close-friends",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-d1212145d4ed"
+      "id": "evt-d1212145d4ed",
+      "slug": "close-friends-evt-d1212145d4ed"
     },
     {
       "date": "2026-11-27",
@@ -154,7 +167,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110923/baile-do-olimpo",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-824adfa07292"
+      "id": "evt-824adfa07292",
+      "slug": "baile-do-olimpo-evt-824adfa07292"
     },
     {
       "date": "2026-11-28",
@@ -165,7 +179,8 @@
       "source": "https://www.pensanoevento.com.br/eventos/110925/pop-hitz",
       "region": "Lagoa da Conceição",
       "note": "",
-      "id": "evt-b8f5589b5bf2"
+      "id": "evt-b8f5589b5bf2",
+      "slug": "pop-hitz-evt-b8f5589b5bf2"
     },
     {
       "date": "2026-10-27",
@@ -177,7 +192,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/185e5b932c71e5bb.webp",
-      "id": "evt-860906acdacb"
+      "id": "evt-860906acdacb",
+      "slug": "brow-malaquias-e-felipe-pansolin-os-folgados-evt-860906acdacb"
     },
     {
       "date": "2026-10-28",
@@ -189,7 +205,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/c73b2d20916be4f1.webp",
-      "id": "evt-8cb45e74aaa8"
+      "id": "evt-8cb45e74aaa8",
+      "slug": "lua-lima-devaneios-de-um-manezinho-evt-8cb45e74aaa8"
     },
     {
       "date": "2026-10-29",
@@ -201,7 +218,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/4f84cc1149ea1873.webp",
-      "id": "evt-3ebafd721fc1"
+      "id": "evt-3ebafd721fc1",
+      "slug": "daniel-duncan-evt-3ebafd721fc1"
     },
     {
       "date": "2026-10-30",
@@ -213,7 +231,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/adb7f6f444e66ace.webp",
-      "id": "evt-5eb7218d6443"
+      "id": "evt-5eb7218d6443",
+      "slug": "fabio-guere-inutilidade-publica-evt-5eb7218d6443"
     },
     {
       "date": "2026-10-31",
@@ -225,7 +244,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/1cf64fbc6b68de90.webp",
-      "id": "evt-af92d277b7ec"
+      "id": "evt-af92d277b7ec",
+      "slug": "cicero-viana-aqui-tem-preparo-evt-af92d277b7ec"
     },
     {
       "date": "2026-11-01",
@@ -237,7 +257,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/7cafd24516e7c909.webp",
-      "id": "evt-37afcce322db"
+      "id": "evt-37afcce322db",
+      "slug": "nathi-gaiteira-amor-humor-e-modao-evt-37afcce322db"
     },
     {
       "date": "2026-11-03",
@@ -249,7 +270,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/08412e3f79fdfe56.webp",
-      "id": "evt-401f1a110051"
+      "id": "evt-401f1a110051",
+      "slug": "humor-huana-bob-rodrigues-evt-401f1a110051"
     },
     {
       "date": "2026-11-04",
@@ -261,7 +283,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/c44cc3c865ffdb06.webp",
-      "id": "evt-76f759a2b51c"
+      "id": "evt-76f759a2b51c",
+      "slug": "arianna-nutt-de-repente-40-evt-76f759a2b51c"
     },
     {
       "date": "2026-11-05",
@@ -273,7 +296,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/cdd2ad02849c05a6.webp",
-      "id": "evt-56db956570ff"
+      "id": "evt-56db956570ff",
+      "slug": "festival-open-mic-evt-56db956570ff"
     },
     {
       "date": "2026-11-06",
@@ -285,7 +309,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/297ef980f8820632.webp",
-      "id": "evt-59cedc637478"
+      "id": "evt-59cedc637478",
+      "slug": "irineu-nicoletti-meio-tanso-evt-59cedc637478"
     },
     {
       "date": "2026-11-07",
@@ -297,7 +322,8 @@
       "region": "Florianópolis",
       "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
       "image": "./images/7d33525eefce8e4d.webp",
-      "id": "evt-b8678d2f037d"
+      "id": "evt-b8678d2f037d",
+      "slug": "marcio-donato-4-amigos-evt-b8678d2f037d"
     },
     {
       "date": "2026-11-13",
@@ -308,7 +334,8 @@
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
       "note": "Horário a confirmar na fonte.",
-      "id": "evt-628f76d5f85e"
+      "id": "evt-628f76d5f85e",
+      "slug": "mundo-m-evt-628f76d5f85e"
     },
     {
       "date": "2026-11-14",
@@ -319,7 +346,8 @@
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
       "note": "Horário a confirmar na fonte.",
-      "id": "evt-68c009490966"
+      "id": "evt-68c009490966",
+      "slug": "armandinho-e-vitor-kley-encontro-de-gigantes-evt-68c009490966"
     },
     {
       "date": "2026-11-14",
@@ -330,7 +358,8 @@
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
       "note": "Horário a confirmar na fonte.",
-      "id": "evt-28f829da39c2"
+      "id": "evt-28f829da39c2",
+      "slug": "blancah-long-set-evt-28f829da39c2"
     },
     {
       "date": "2026-11-10",
@@ -341,7 +370,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-a2fa2c2379b5"
+      "id": "evt-a2fa2c2379b5",
+      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-a2fa2c2379b5"
     },
     {
       "date": "2026-11-11",
@@ -352,7 +382,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-d6de7aa71729"
+      "id": "evt-d6de7aa71729",
+      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-d6de7aa71729"
     },
     {
       "date": "2026-11-12",
@@ -363,7 +394,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-86de8aca90b1"
+      "id": "evt-86de8aca90b1",
+      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-86de8aca90b1"
     },
     {
       "date": "2026-11-13",
@@ -374,7 +406,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-b8aa6b37dcc2"
+      "id": "evt-b8aa6b37dcc2",
+      "slug": "pele-negra-justica-branca-evt-b8aa6b37dcc2"
     },
     {
       "date": "2026-11-13",
@@ -385,7 +418,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-fa30d5d7081c"
+      "id": "evt-fa30d5d7081c",
+      "slug": "viver-e-melhor-que-sonhar-belchior-evt-fa30d5d7081c"
     },
     {
       "date": "2026-11-14",
@@ -396,7 +430,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-4c4ed12fddd7"
+      "id": "evt-4c4ed12fddd7",
+      "slug": "minha-ultima-carta-de-amor-evt-4c4ed12fddd7"
     },
     {
       "date": "2026-11-19",
@@ -407,7 +442,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-1b056db0cbb9"
+      "id": "evt-1b056db0cbb9",
+      "slug": "ritmos-brasileiros-do-norte-ao-sul-evt-1b056db0cbb9"
     },
     {
       "date": "2026-11-20",
@@ -418,7 +454,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-ada5cbfbfcde"
+      "id": "evt-ada5cbfbfcde",
+      "slug": "dois-de-nos-evt-ada5cbfbfcde"
     },
     {
       "date": "2026-11-21",
@@ -429,7 +466,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-61b491eb7c76"
+      "id": "evt-61b491eb7c76",
+      "slug": "dois-de-nos-evt-61b491eb7c76"
     },
     {
       "date": "2026-11-22",
@@ -440,7 +478,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-697e839c07b7"
+      "id": "evt-697e839c07b7",
+      "slug": "dois-de-nos-evt-697e839c07b7"
     },
     {
       "date": "2026-11-21",
@@ -451,7 +490,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-de4c14b00bd8"
+      "id": "evt-de4c14b00bd8",
+      "slug": "a-danca-das-flores-evt-de4c14b00bd8"
     },
     {
       "date": "2026-11-26",
@@ -462,7 +502,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-7c83d7b8a97e"
+      "id": "evt-7c83d7b8a97e",
+      "slug": "musica-em-cena-associacao-coral-de-florianopolis-evt-7c83d7b8a97e"
     },
     {
       "date": "2026-11-28",
@@ -473,7 +514,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-9a01a5e083e8"
+      "id": "evt-9a01a5e083e8",
+      "slug": "o-pequeno-principe-e-o-presente-dos-ceus-evt-9a01a5e083e8"
     },
     {
       "date": "2026-11-28",
@@ -484,7 +526,8 @@
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
       "region": "Florianópolis",
       "note": "Confira sessões e ingressos na fonte.",
-      "id": "evt-1546dcd99ecd"
+      "id": "evt-1546dcd99ecd",
+      "slug": "roxette-uk-the-tribute-show-evt-1546dcd99ecd"
     },
     {
       "date": "2026-10-30",
@@ -495,7 +538,8 @@
       "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
       "region": "Centro",
       "note": "Festival de 30/10 a 01/11; horários específicos sujeitos a confirmação.",
-      "id": "evt-ebb62fc37d0b"
+      "id": "evt-ebb62fc37d0b",
+      "slug": "folianopolis-2026-abertura-evt-ebb62fc37d0b"
     },
     {
       "date": "2026-10-31",
@@ -506,7 +550,8 @@
       "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
       "region": "Centro",
       "note": "",
-      "id": "evt-4a29531bb042"
+      "id": "evt-4a29531bb042",
+      "slug": "folianopolis-2026-segundo-dia-evt-4a29531bb042"
     },
     {
       "date": "2026-11-01",
@@ -517,7 +562,8 @@
       "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
       "region": "Centro",
       "note": "",
-      "id": "evt-252e05950d25"
+      "id": "evt-252e05950d25",
+      "slug": "folianopolis-2026-encerramento-evt-252e05950d25"
     },
     {
       "date": "2026-10-30",
@@ -528,7 +574,8 @@
       "source": "https://guiafloripa.com.br/agenda/Shows/",
       "region": "Centro",
       "note": "Show previsto para 21h30; abertura da casa às 20h.",
-      "id": "evt-9980b1fd85a8"
+      "id": "evt-9980b1fd85a8",
+      "slug": "abruna-pop-rock-e-r-b-evt-9980b1fd85a8"
     },
     {
       "date": "2026-10-31",
@@ -539,7 +586,8 @@
       "source": "https://tocaonde.com.br/guides/halloween-2026-florianopolis",
       "region": "Agronômica",
       "note": "",
-      "id": "evt-8eade7ba7bfe"
+      "id": "evt-8eade7ba7bfe",
+      "slug": "halloween-skrotes-ossca-nosferatu-evt-8eade7ba7bfe"
     },
     {
       "date": "2026-10-31",
@@ -550,7 +598,8 @@
       "source": "https://tocaonde.com.br/guides/halloween-2026-florianopolis",
       "region": "Florianópolis",
       "note": "",
-      "id": "evt-32fc50b56d0e"
+      "id": "evt-32fc50b56d0e",
+      "slug": "halloween-com-blockbusters-evt-32fc50b56d0e"
     },
     {
       "date": "2026-11-01",
@@ -561,7 +610,8 @@
       "source": "https://www.eventoon.com.br/cidade/florianopolis-sc",
       "region": "Jurerê",
       "note": "",
-      "id": "evt-e2c338dd3749"
+      "id": "evt-e2c338dd3749",
+      "slug": "n-n-p-jessica-brankka-e-miss-natalia-evt-e2c338dd3749"
     },
     {
       "date": "2026-11-06",
@@ -572,7 +622,8 @@
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
       "note": "",
-      "id": "evt-d13a03ca392e"
+      "id": "evt-d13a03ca392e",
+      "slug": "show-de-fresno-evt-d13a03ca392e"
     },
     {
       "date": "2026-11-07",
@@ -583,7 +634,8 @@
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
       "note": "Entrada gratuita segundo a fonte.",
-      "id": "evt-aad7b4c02ecb"
+      "id": "evt-aad7b4c02ecb",
+      "slug": "3o-festival-cultural-chines-de-sc-evt-aad7b4c02ecb"
     },
     {
       "date": "2026-11-07",
@@ -594,7 +646,8 @@
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
       "note": "Evento em 7 e 8 de novembro.",
-      "id": "evt-7ad7b0fc7589"
+      "id": "evt-7ad7b0fc7589",
+      "slug": "haru-matsuri-4a-edicao-evt-7ad7b0fc7589"
     },
     {
       "date": "2026-11-13",
@@ -605,7 +658,8 @@
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
       "note": "Evento de 13 a 15 de novembro.",
-      "id": "evt-fb254317e98a"
+      "id": "evt-fb254317e98a",
+      "slug": "feira-de-ceramica-evt-fb254317e98a"
     },
     {
       "date": "2026-11-13",
@@ -616,7 +670,8 @@
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
       "note": "Evento de 13 a 15 de novembro.",
-      "id": "evt-368fb60b6ca1"
+      "id": "evt-368fb60b6ca1",
+      "slug": "ponte-de-palavras-encontro-literario-evt-368fb60b6ca1"
     },
     {
       "date": "2026-11-01",
@@ -627,7 +682,8 @@
       "source": "https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/",
       "region": "Centro",
       "note": "Data obtida na página individual do evento, na seção Detalhes.",
-      "id": "evt-579a08463320"
+      "id": "evt-579a08463320",
+      "slug": "halloween-festa-a-fantasia-open-bar-evt-579a08463320"
     }
   ]
 }

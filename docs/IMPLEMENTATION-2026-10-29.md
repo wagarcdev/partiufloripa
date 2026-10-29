@@ -15,3 +15,10 @@
 
 ## Follow-up acceptance
 Run real browser QA for old/new event links, neutral artwork, filters, accessibility, desktop/mobile. Confirm publication workflow success before claiming production deployment.
+
+## Follow-up: readable event routes and SEO generation
+- Each event now has a persistent ASCII slug, alongside its stable ID.
+- The Github Pages deployment generates /evento/<slug>/index.html pages automatically from the detail template and events.json. Each generated page has event-specific title, description, Open Graph metadata and canonical URL.
+- Historical event links using query parameters remain supported by evento.html.
+- Unreviewed events remain noindex,follow; only an explicitly reviewed event with status=verified is eligible for index,follow. This is infrastructure, not an editorial claim of verification.
+- SEO path generation was tested locally, but visual/browser QA and production acceptance are still pending.
