@@ -73,6 +73,34 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const icons={"Baladas":"🪩","Shows":"🎤","Humor":"😂","Teatro":"🎭","Cinema":"🎬","Dança":"💃","Festivais":"🎪","Feiras":"🛍️","Cultura":"📚"};
 const qs=new URLSearchParams(location.search);
 const id=qs.get("id")||document.documentElement.dataset.eventId,date=qs.get("date"),title=qs.get("title"),venue=qs.get("venue");
+const backLink=document.querySelector(".back");
+if(qs.get("back")==="map"&&/^\d{4}-\d{2}-\d{2}$/.test(qs.get("date")||"")&&/^[a-z0-9:_ -]{1,128}$/.test(qs.get("popup")||"")){
+ const home=new URL("./index.html",document.baseURI);
+ home.searchParams.set("view","map");
+ home.searchParams.set("date",qs.get("date"));
+ home.searchParams.set("popup",qs.get("popup"));
+ const lat=Number(qs.get("lat")),lng=Number(qs.get("lng")),zoom=Number(qs.get("zoom"));
+ if(qs.has("lat")&&qs.has("lng")&&lat>=-28&&lat<=-27&&lng>=-49&&lng<=-48.2&&Number.isInteger(zoom)&&zoom>=8&&zoom<=16){
+  home.searchParams.set("lat",String(lat));
+  home.searchParams.set("lng",String(lng));
+  home.searchParams.set("zoom",String(zoom));
+ }
+ if(/^\d{1,5}$/.test(qs.get("scroll")||""))home.searchParams.set("scroll",qs.get("scroll"));
+ backLink.href=home.href;
+ backLink.textContent="← Voltar ao mapa";
+}else{
+ // In regular browsing, the actual previous page keeps month, search, scroll and tab state.
+ backLink.addEventListener("click",event=>{
+  try{
+   const from=new URL(document.referrer);
+   const home=new URL("./index.html",document.baseURI);
+   const rootPath=home.pathname.replace(/index\.html$/,"");
+   if(from.origin===location.origin&&(from.pathname===home.pathname||from.pathname===rootPath)&&history.length>1){
+    event.preventDefault();history.back();
+   }
+  }catch{}
+ });
+}
 const detail=document.getElementById("detail");
 let mediaRegistry={categoryPhotos:{items:[]},venueMedia:{items:[]},eventPhotos:{assets:[]},imageRights:{assets:[]}};
 function notice(message,warning=false){return '<p role="note" class="notice'+(warning?' warning':'')+'">'+esc(message)+'</p>'}

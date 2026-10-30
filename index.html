@@ -70,7 +70,7 @@ a.event-card:hover{border-color:#8ead62}
 .pf-map-event-title{font-size:13px;font-weight:850;line-height:1.28;color:#fffdf5;overflow-wrap:anywhere}
 .pf-map-meta{font-size:10px;color:#e7f0ed;line-height:1.4}
 .pf-map-show{white-space:nowrap}
-.pf-map-venue{font-size:12px;color:#fffdf5;line-height:1.2;font-weight:850;letter-spacing:-.15px;overflow-wrap:anywhere;padding-right:23px}
+.pf-map-venue{font-size:12px;color:#92ead6;line-height:1.2;font-weight:850;letter-spacing:-.15px;overflow-wrap:anywhere;padding-right:23px}
 .pf-map-event-link{font-size:11px;font-weight:850;text-decoration:none;color:#f5d78f;display:inline-flex;gap:5px;padding:2px 0;min-height:22px;align-items:center;margin-top:auto}
 .leaflet-popup.pf-map-popup .pf-map-event-link{color:#f5d78f}
 .leaflet-popup.pf-map-popup .pf-map-event-link:hover{text-decoration:underline;color:#ffe9ad}
@@ -105,7 +105,12 @@ function filtered(){const q=$("search").value.trim().toLocaleLowerCase("pt-BR"),
 let mapInstance=null,heatLayer=null,venueMarkers=null,mapReady=null,activeView="list";
 const previewParams=new URLSearchParams(location.search);
 let previewDate=/^\d{4}-\d{2}-\d{2}$/.test(previewParams.get("date")||"")?previewParams.get("date"):null;
-let previewPopup=/^[a-z0-9-]+$/.test(previewParams.get("popup")||"")?previewParams.get("popup"):null;
+let previewPopup=/^[a-z0-9:_ -]{1,128}$/.test(previewParams.get("popup")||"")?previewParams.get("popup"):null;
+const previewZoom=/^\d{1,2}$/.test(previewParams.get("zoom")||"")?Number(previewParams.get("zoom")):null;
+const previewLat=Number(previewParams.get("lat")),previewLng=Number(previewParams.get("lng"));
+const previewCenter=previewParams.has("lat")&&previewParams.has("lng")&&previewLat>=-28&&previewLat<=-27&&previewLng>=-49&&previewLng<=-48.2?[previewLat,previewLng]:null;
+let previewScroll=/^\d{1,5}$/.test(previewParams.get("scroll")||"")?Math.min(Number(previewParams.get("scroll")),10000):null;
+
 const nightEvents=()=>events.filter(e=>e.time&&e.time>="18:00");
 function availableNights(){const all=[...new Set(nightEvents().map(e=>e.date))].sort();const sel=$("night-date"),prev=sel.value;sel.min=all[0]||today;sel.max=all.at(-1)||today;sel.value=prev&&prev>=sel.min&&prev<=sel.max?prev:(all.find(d=>d>=today)||all[0]||"")}
 function loadMapSdk(){if(mapReady)return mapReady;mapReady=new Promise((resolve,reject)=>{const link=document.createElement("link");link.rel="stylesheet";link.href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";document.head.append(link);const script=document.createElement("script");script.src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";script.onload=()=>{const heat=document.createElement("script");heat.src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js";heat.onload=resolve;heat.onerror=()=>resolve();document.head.append(heat)};script.onerror=()=>reject(new Error("Não foi possível carregar o mapa"));document.head.append(script)});return mapReady}
@@ -137,7 +142,9 @@ function paintNightMap(){
  if(bounds.length>1)mapInstance.fitBounds(bounds,{padding:[45,45],maxZoom:12});
  else if(bounds.length)mapInstance.setView(bounds[0],12);
  else mapInstance.setView([-27.59,-48.52],11);
+ if(previewCenter&&previewZoom>=8&&previewZoom<=16)mapInstance.setView(previewCenter,previewZoom);
  if(previewMarker){previewPopup=null;setTimeout(()=>{if(activeView==="map"&&mapInstance.hasLayer(previewMarker))previewMarker.openPopup()},230)}
+ if(previewScroll!==null){const y=previewScroll;previewScroll=null;setTimeout(()=>window.scrollTo(0,y),420)}
  const legend=document.querySelector(".heat-legend");if(legend)legend.hidden=!points.length;
  $("map-status").textContent=night.length
   ?night.length+" evento(s) noturno(s), "+groups.size+" local(is) mapeado(s). "+(unmapped?unmapped+" evento(s) sem localização confiável não plotado(s). ":"")+"Pontos aproximados; calor representa eventos cadastrados."
@@ -145,6 +152,24 @@ function paintNightMap(){
 }
 let baseLayer=null;function setMinimalBasemap(){if(!mapInstance)return;if(baseLayer)mapInstance.removeLayer(baseLayer);baseLayer=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,attribution:'Tiles &copy; Esri, HERE, Garmin, OpenStreetMap contributors, and the GIS user community'}).addTo(mapInstance)}
 async function showMap(){activeView="map";$("tab-map").classList.add("active");$("tab-list").classList.remove("active");$("tab-map").setAttribute("aria-selected","true");$("tab-list").setAttribute("aria-selected","false");$("list-panel").hidden=true;$("map-panel").hidden=false;availableNights();if(previewDate){const field=$("night-date");if(previewDate>=field.min&&previewDate<=field.max)field.value=previewDate;previewDate=null}$("map-status").textContent="Carregando mapa...";try{await loadMapSdk();if(activeView!=="map")return;if(!mapInstance){mapInstance=L.map("night-map",{scrollWheelZoom:false,zoomControl:false}).setView([-27.59,-48.52],11);L.control.zoom({position:"bottomright"}).addTo(mapInstance);setMinimalBasemap()}setTimeout(()=>mapInstance.invalidateSize(),60);paintNightMap()}catch(err){$("map-status").textContent="Mapa indisponível no momento. Verifique a conexão e tente novamente.";console.error(err)}}
+document.addEventListener("click",event=>{
+ const link=event.target.closest(".pf-map-popup .pf-map-event-link");
+ if(!link||!mapInstance||activeView!=="map")return;
+ const popup=link.closest(".pf-map-card"),venueId=popup?.dataset.popupId||"";
+ if(!/^[a-z0-9:_ -]{1,128}$/.test(venueId))return;
+ const date=$("night-date").value;
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(date))return;
+ const target=new URL(link.getAttribute("href"),document.baseURI);
+ target.searchParams.set("back","map");
+ target.searchParams.set("date",date);
+ target.searchParams.set("popup",venueId);
+ const center=mapInstance.getCenter();
+ target.searchParams.set("lat",center.lat.toFixed(6));
+ target.searchParams.set("lng",center.lng.toFixed(6));
+ target.searchParams.set("zoom",String(mapInstance.getZoom()));
+ target.searchParams.set("scroll",String(Math.max(0,Math.round(window.scrollY))));
+ link.href=target.href;
+},true);
 $("tab-map").addEventListener("click",showMap);$("tab-list").addEventListener("click",()=>{activeView="list";$("tab-list").classList.add("active");$("tab-map").classList.remove("active");$("tab-list").setAttribute("aria-selected","true");$("tab-map").setAttribute("aria-selected","false");$("list-panel").hidden=false;$("map-panel").hidden=true});$("night-date").addEventListener("change",paintNightMap);
 Promise.all(["./events.json","./data/venues.json","./data/image-rights.json","./data/licensed-category-photos.json","./data/venue-media.json","./data/event-artist-photos.json"].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error("Falha "+url);return r.json()}))).then(([d,venues,rights,photos,venuePics,artistPics])=>{venueDirectory=venues;imageRights=rights;categoryPhotos=photos;venueMedia=venuePics;eventPhotos=artistPics;events=d.events.filter(e=>/^2026-(10|11)-\d{2}$/.test(e.date)&&/^https:\/\//.test(e.source)&&e.sourceReview!=="quarantined");for(const [id,key] of [["category","category"],["region","region"]]){for(const v of [...new Set(events.map(e=>key==="region"?displayRegion(e):e[key]))].sort((a,b)=>a.localeCompare(b,"pt-BR"))){let o=document.createElement("option");o.value=v;o.textContent=id==="category"?(categoryIcons[v]||"📅")+" "+v:v;$(id).append(o)}}render();if(previewParams.get("view")==="map"){showMap()}else if(activeView==="map"){availableNights();paintNightMap()}}).catch(()=>{$("agenda").innerHTML='<div class="empty">Não foi possível carregar a agenda.</div>';$("featured").innerHTML=''});["search","category","region","period"].forEach(id=>$(id).addEventListener("input",render));document.querySelectorAll("[data-month]").forEach(b=>b.addEventListener("click",()=>{month=b.dataset.month;document.querySelectorAll("[data-month]").forEach(x=>x.classList.toggle("active",x===b));render()}));
 </script></body></html>

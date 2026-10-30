@@ -24,7 +24,7 @@
     '<div class="pf-map-event-title">'+escape(e.title||"Evento")+'</div>'+metadata+
     '<a class="pf-map-event-link" href="'+escape(href)+'" aria-label="Ver detalhes de '+escape(e.title||"evento")+'">Ver evento <span aria-hidden="true">↗</span></a></div></article>';
   }).join("");
-  return '<section class="pf-map-card '+(multiple?'pf-map-card--multi':'pf-map-card--single')+'" aria-label="'+items.length+' evento(s) em '+escape(venue)+'; '+escape(precision)+'">'+
+  return '<section class="pf-map-card '+(multiple?'pf-map-card--multi':'pf-map-card--single')+'" data-popup-id="'+escape(pos.id||'')+'" aria-label="'+items.length+' evento(s) em '+escape(venue)+'; '+escape(precision)+'">'+
    '<div class="pf-map-events'+(items.length>2?' pf-map-events-scroll':'')+'">'+cards+'</div></section>';
  }
  const api={render};
