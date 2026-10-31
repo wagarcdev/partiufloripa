@@ -49,7 +49,8 @@
 - [x] Testes técnicos e CI do PR aprovados com 29 registros tendo método, escopo e URL de evidência específica.
 - [x] Criada página de privacidade e canal público de correção/retirada via GitHub Issues (requer conta; não serve para dados privados).
 - [x] Atribuição do Light Gray Canvas atualizada para as fontes indicadas pela Esri.
-- [ ] QA visual e funcional no Android e desktop para a versão do PR; revisar navegação, filtros, cards, mapa e avisos.
+- [x] QA browser em PR concluído com Chromium em viewports 390×844 e 1440×900: agenda, filtros, mapa, capas, detalhe e página de privacidade. Capturas no [artefato GitHub](https://github.com/wagarcdev/partiufloripa/actions/runs/41175059280/artifacts/13032633304); inspeção visual das cinco capturas sem corte horizontal evidente ou mapa vazio. Não equivale a Android físico.
+- [ ] Verificar em aparelho Android físico e aceitar visualmente o conjunto antes de anunciar o beta.
 - [ ] Avaliar condições de uso dos tiles Esri para esta aplicação e eventual monetização; atribuição, sozinha, não equivale a autorização.
 - [ ] Definir contato reservado para solicitações sensíveis antes de ampliar o beta.
 - [ ] Validar distribuição de convite via link sem alegação de restrição técnica de acesso (GitHub Pages público).
