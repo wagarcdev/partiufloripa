@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-31",
   "events": [
     {
       "date": "2026-10-29",
@@ -11,7 +11,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-a35373c81ac5",
-      "slug": "boiler-deck-37-evt-a35373c81ac5"
+      "slug": "boiler-deck-37-evt-a35373c81ac5",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/111987/boiler-deck-37",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-10-30",
@@ -23,7 +28,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-54c9de57c44b",
-      "slug": "pop-hitz-evt-54c9de57c44b"
+      "slug": "pop-hitz-evt-54c9de57c44b",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108694/pop-hitz",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-10-31",
@@ -35,7 +45,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-10d554498659",
-      "slug": "baila-evt-10d554498659"
+      "slug": "baila-evt-10d554498659",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108699/baila",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-01",
@@ -47,7 +62,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-d39809f47b90",
-      "slug": "hype-ed-especial-elite-evt-d39809f47b90"
+      "slug": "hype-ed-especial-elite-evt-d39809f47b90",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110488/hype-ed-especial-elite",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-05",
@@ -59,7 +79,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-7486ca6d39b6",
-      "slug": "inferninho-evt-7486ca6d39b6"
+      "slug": "inferninho-evt-7486ca6d39b6",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110916/inferninho",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-06",
@@ -69,9 +94,11 @@
       "category": "Baladas",
       "source": "https://www.pensanoevento.com.br/espartanofloripa",
       "region": "Lagoa da Conceição",
-      "note": "",
+      "note": "Página genérica da casa não comprova o evento específico nesta data. Revisão necessária.",
       "id": "evt-9d90a0eb82b0",
-      "slug": "trippy-anos-2000-evt-9d90a0eb82b0"
+      "slug": "trippy-anos-2000-evt-9d90a0eb82b0",
+      "status": "pending_review",
+      "sourceReview": "quarantined"
     },
     {
       "date": "2026-11-07",
@@ -83,7 +110,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-4ff37533bed9",
-      "slug": "hype-evt-4ff37533bed9"
+      "slug": "hype-evt-4ff37533bed9",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110927/hype",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-12",
@@ -95,7 +127,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-a8db01615de1",
-      "slug": "balance-evt-a8db01615de1"
+      "slug": "balance-evt-a8db01615de1",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/nomenalista/110917/balance",
+      "reviewMethod": "organizer_ticket_guestlist",
+      "reviewEvidenceDetails": "Página específica de lista de presença do evento: BALANCE em 12/11, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-13",
@@ -107,20 +144,30 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-82ff8748a60e",
-      "slug": "baile-do-olimpo-evt-82ff8748a60e"
+      "slug": "baile-do-olimpo-evt-82ff8748a60e",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110921/baile-do-olimpo",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-14",
       "time": "21:00",
-      "title": "NA ONDA convida: atração a confirmar",
+      "title": "BACKWASH: 2016 vs 2026",
       "venue": "Bar do Espartano",
       "category": "Baladas",
-      "source": "https://www.pensanoevento.com.br/eventos/108084/na-onda-convida-rj",
+      "source": "https://www.pensanoevento.com.br/eventos/108084/backwash-2016-vs-2026",
       "region": "Lagoa da Conceição",
-      "note": "",
+      "note": "A denominação atual da página individual substitui o título preliminar; slug legado mantido para preservar links.",
       "image": "./images/d9f1bf5a34da234e.webp",
       "id": "evt-362d49fca53d",
-      "slug": "na-onda-convida-atracao-a-confirmar-evt-362d49fca53d"
+      "slug": "na-onda-convida-atracao-a-confirmar-evt-362d49fca53d",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108084/backwash-2016-vs-2026",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-20",
@@ -132,7 +179,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-7495d9df5930",
-      "slug": "hype-evt-7495d9df5930"
+      "slug": "hype-evt-7495d9df5930",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110922/hype",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-21",
@@ -144,7 +196,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-4e523a3e1344",
-      "slug": "dj-vs-deck-evt-4e523a3e1344"
+      "slug": "dj-vs-deck-evt-4e523a3e1344",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110924/dj-vs-deck",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-26",
@@ -156,7 +213,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-d1212145d4ed",
-      "slug": "close-friends-evt-d1212145d4ed"
+      "slug": "close-friends-evt-d1212145d4ed",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110919/close-friends",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-27",
@@ -168,7 +230,12 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-824adfa07292",
-      "slug": "baile-do-olimpo-evt-824adfa07292"
+      "slug": "baile-do-olimpo-evt-824adfa07292",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110923/baile-do-olimpo",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-28",
@@ -180,33 +247,50 @@
       "region": "Lagoa da Conceição",
       "note": "",
       "id": "evt-b8f5589b5bf2",
-      "slug": "pop-hitz-evt-b8f5589b5bf2"
+      "slug": "pop-hitz-evt-b8f5589b5bf2",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110925/pop-hitz",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-10-27",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Brow Malaquias e Felipe Pansolin — Os Folgados",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/108712/brow-malaquias-e-felipe-pansolin-os-folgados-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/185e5b932c71e5bb.webp",
       "id": "evt-860906acdacb",
-      "slug": "brow-malaquias-e-felipe-pansolin-os-folgados-evt-860906acdacb"
+      "slug": "brow-malaquias-e-felipe-pansolin-os-folgados-evt-860906acdacb",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108712/brow-malaquias-e-felipe-pansolin-os-folgados-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-28",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Luã Lima — Devaneios de um Manezinho",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/109308/lua-lima-devaneios-de-um-manezinho-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/c73b2d20916be4f1.webp",
       "id": "evt-8cb45e74aaa8",
-      "slug": "lua-lima-devaneios-de-um-manezinho-evt-8cb45e74aaa8"
+      "slug": "lua-lima-devaneios-de-um-manezinho-evt-8cb45e74aaa8",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109308/lua-lima-devaneios-de-um-manezinho-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-29",
@@ -216,116 +300,168 @@
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h",
       "region": "Saco Grande",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/4f84cc1149ea1873.webp",
       "id": "evt-3ebafd721fc1",
       "slug": "daniel-duncan-evt-3ebafd721fc1",
       "showTime": "21:00",
-      "lastVerifiedAt": "2026-10-29"
+      "lastVerifiedAt": "2026-10-31",
+      "status": "verified",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-30",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Fábio Güere — Inutilidade Pública",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/107476/fabio-guere-panico-inutilidade-publica-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/adb7f6f444e66ace.webp",
       "id": "evt-5eb7218d6443",
-      "slug": "fabio-guere-inutilidade-publica-evt-5eb7218d6443"
+      "slug": "fabio-guere-inutilidade-publica-evt-5eb7218d6443",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107476/fabio-guere-panico-inutilidade-publica-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-31",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Cícero Viana — Aqui Tem Preparo!",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/107477/cicero-viana-aqui-tem-preparo-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/1cf64fbc6b68de90.webp",
       "id": "evt-af92d277b7ec",
-      "slug": "cicero-viana-aqui-tem-preparo-evt-af92d277b7ec"
+      "slug": "cicero-viana-aqui-tem-preparo-evt-af92d277b7ec",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107477/cicero-viana-aqui-tem-preparo-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-01",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Nathi Gaiteira — Amor, Humor e Modão",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/109171/nathi-gaiteira-amor-humor-e-modao-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/7cafd24516e7c909.webp",
       "id": "evt-37afcce322db",
-      "slug": "nathi-gaiteira-amor-humor-e-modao-evt-37afcce322db"
+      "slug": "nathi-gaiteira-amor-humor-e-modao-evt-37afcce322db",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109171/nathi-gaiteira-amor-humor-e-modao-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-03",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Humor & Huana — Bob Rodrigues",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/110727/humor-huana-reducao-de-danos-com-bob-rodrigues-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/08412e3f79fdfe56.webp",
       "id": "evt-401f1a110051",
-      "slug": "humor-huana-bob-rodrigues-evt-401f1a110051"
+      "slug": "humor-huana-bob-rodrigues-evt-401f1a110051",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110727/humor-huana-reducao-de-danos-com-bob-rodrigues-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-04",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Arianna Nutt — De Repente 40",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/109494/arianna-nutt-de-repente-40-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/c44cc3c865ffdb06.webp",
       "id": "evt-76f759a2b51c",
-      "slug": "arianna-nutt-de-repente-40-evt-76f759a2b51c"
+      "slug": "arianna-nutt-de-repente-40-evt-76f759a2b51c",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109494/arianna-nutt-de-repente-40-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-05",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Festival Open Mic",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/111512/festival-open-mic-o-melhor-voce-escolhe-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/cdd2ad02849c05a6.webp",
       "id": "evt-56db956570ff",
-      "slug": "festival-open-mic-evt-56db956570ff"
+      "slug": "festival-open-mic-evt-56db956570ff",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/111512/festival-open-mic-o-melhor-voce-escolhe-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-06",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Irineu Nicoletti — Meio Tanso",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/109496/irineu-nicoletti-meio-tanso-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/297ef980f8820632.webp",
       "id": "evt-59cedc637478",
-      "slug": "irineu-nicoletti-meio-tanso-evt-59cedc637478"
+      "slug": "irineu-nicoletti-meio-tanso-evt-59cedc637478",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109496/irineu-nicoletti-meio-tanso-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-07",
-      "time": "21:00",
+      "time": "19:00",
       "title": "Marcio Donato (4 Amigos)",
       "venue": "Floripa Comedy Club",
       "category": "Humor",
       "source": "https://www.pensanoevento.com.br/eventos/105680/marcio-donato-4-amigos-21h",
-      "region": "Florianópolis",
-      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura.",
+      "region": "Saco Grande",
+      "note": "Fonte lista 19h e título indica sessão 21h; confirmar abertura. Abertura 19h; início do show 21h. Fonte individual de bilheteria.",
       "image": "./images/7d33525eefce8e4d.webp",
       "id": "evt-b8678d2f037d",
-      "slug": "marcio-donato-4-amigos-evt-b8678d2f037d"
+      "slug": "marcio-donato-4-amigos-evt-b8678d2f037d",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/105680/marcio-donato-4-amigos-21h",
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-13",
@@ -335,10 +471,11 @@
       "category": "Shows",
       "source": "https://www.pensanoevento.com.br/eventos/109366/mundo-m-florianopolis",
       "region": "Jurerê",
-      "note": "Horário a confirmar na fonte.",
+      "note": "Horário a confirmar na fonte. Divergência: agenda Music Park cita Indoor; página de ingressos cita Stage. Manter pendente até confirmação.",
       "id": "evt-628f76d5f85e",
       "slug": "mundo-m-evt-628f76d5f85e",
-      "lastVerifiedAt": "2026-10-29"
+      "lastVerifiedAt": "2026-10-29",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-14",
@@ -348,9 +485,10 @@
       "category": "Shows",
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
-      "note": "Horário a confirmar na fonte.",
+      "note": "Data/local na agenda oficial Music Park; horário não localizado. Revisão pendente.",
       "id": "evt-68c009490966",
-      "slug": "armandinho-e-vitor-kley-encontro-de-gigantes-evt-68c009490966"
+      "slug": "armandinho-e-vitor-kley-encontro-de-gigantes-evt-68c009490966",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-14",
@@ -360,9 +498,10 @@
       "category": "Baladas",
       "source": "https://musicpark.com.br/agenda/",
       "region": "Jurerê",
-      "note": "Horário a confirmar na fonte.",
+      "note": "Data/local na agenda oficial Music Park; horário não localizado. Revisão pendente.",
       "id": "evt-28f829da39c2",
-      "slug": "blancah-long-set-evt-28f829da39c2"
+      "slug": "blancah-long-set-evt-28f829da39c2",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-10",
@@ -371,10 +510,11 @@
       "venue": "Teatro Ademir Rosa",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-a2fa2c2379b5",
-      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-a2fa2c2379b5"
+      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-a2fa2c2379b5",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-11",
@@ -383,10 +523,11 @@
       "venue": "Teatro Ademir Rosa",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-d6de7aa71729",
-      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-d6de7aa71729"
+      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-d6de7aa71729",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-12",
@@ -395,10 +536,11 @@
       "venue": "Teatro Ademir Rosa",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-86de8aca90b1",
-      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-86de8aca90b1"
+      "slug": "o-ceu-da-lingua-gregorio-duvivier-evt-86de8aca90b1",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-13",
@@ -407,10 +549,11 @@
       "venue": "Cinema Gilberto Gerlach",
       "category": "Cinema",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-b8aa6b37dcc2",
-      "slug": "pele-negra-justica-branca-evt-b8aa6b37dcc2"
+      "slug": "pele-negra-justica-branca-evt-b8aa6b37dcc2",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-13",
@@ -419,10 +562,11 @@
       "venue": "Teatro Ademir Rosa",
       "category": "Shows",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-fa30d5d7081c",
-      "slug": "viver-e-melhor-que-sonhar-belchior-evt-fa30d5d7081c"
+      "slug": "viver-e-melhor-que-sonhar-belchior-evt-fa30d5d7081c",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-14",
@@ -431,10 +575,11 @@
       "venue": "MIS/SC",
       "category": "Cinema",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-4c4ed12fddd7",
-      "slug": "minha-ultima-carta-de-amor-evt-4c4ed12fddd7"
+      "slug": "minha-ultima-carta-de-amor-evt-4c4ed12fddd7",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-19",
@@ -443,46 +588,50 @@
       "venue": "Teatro Pedro Ivo",
       "category": "Dança",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Saco Grande",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-1b056db0cbb9",
-      "slug": "ritmos-brasileiros-do-norte-ao-sul-evt-1b056db0cbb9"
+      "slug": "ritmos-brasileiros-do-norte-ao-sul-evt-1b056db0cbb9",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-20",
-      "time": "",
+      "time": "20:30",
       "title": "Dois de Nós",
       "venue": "Teatro Ademir Rosa",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte.",
+      "region": "Agronômica",
+      "note": "Horário divulgado em pauta da Ouviram baseada na FCC; aguarda conferência individual na produção.",
       "id": "evt-ada5cbfbfcde",
-      "slug": "dois-de-nos-evt-ada5cbfbfcde"
+      "slug": "dois-de-nos-evt-ada5cbfbfcde",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-21",
-      "time": "",
+      "time": "20:00",
       "title": "Dois de Nós",
       "venue": "Teatro Ademir Rosa",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte.",
+      "region": "Agronômica",
+      "note": "Horário divulgado em pauta da Ouviram baseada na FCC; aguarda conferência individual na produção.",
       "id": "evt-61b491eb7c76",
-      "slug": "dois-de-nos-evt-61b491eb7c76"
+      "slug": "dois-de-nos-evt-61b491eb7c76",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-22",
-      "time": "",
+      "time": "19:00",
       "title": "Dois de Nós",
       "venue": "Teatro Ademir Rosa",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
-      "note": "Confira sessões e ingressos na fonte.",
+      "region": "Agronômica",
+      "note": "Horário divulgado em pauta da Ouviram baseada na FCC; aguarda conferência individual na produção.",
       "id": "evt-697e839c07b7",
-      "slug": "dois-de-nos-evt-697e839c07b7"
+      "slug": "dois-de-nos-evt-697e839c07b7",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-21",
@@ -491,10 +640,11 @@
       "venue": "Teatro Pedro Ivo",
       "category": "Dança",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Saco Grande",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-de4c14b00bd8",
-      "slug": "a-danca-das-flores-evt-de4c14b00bd8"
+      "slug": "a-danca-das-flores-evt-de4c14b00bd8",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-26",
@@ -503,10 +653,11 @@
       "venue": "Teatro Álvaro de Carvalho",
       "category": "Shows",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Centro",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-7c83d7b8a97e",
-      "slug": "musica-em-cena-associacao-coral-de-florianopolis-evt-7c83d7b8a97e"
+      "slug": "musica-em-cena-associacao-coral-de-florianopolis-evt-7c83d7b8a97e",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-28",
@@ -515,10 +666,11 @@
       "venue": "Teatro Pedro Ivo",
       "category": "Teatro",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Saco Grande",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-9a01a5e083e8",
-      "slug": "o-pequeno-principe-e-o-presente-dos-ceus-evt-9a01a5e083e8"
+      "slug": "o-pequeno-principe-e-o-presente-dos-ceus-evt-9a01a5e083e8",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-28",
@@ -527,46 +679,62 @@
       "venue": "Teatro Ademir Rosa",
       "category": "Shows",
       "source": "https://ouviram.com.br/agenda/shows-e-eventos-em-florianopolis-outubro-novembro-2026",
-      "region": "Florianópolis",
+      "region": "Agronômica",
       "note": "Confira sessões e ingressos na fonte.",
       "id": "evt-1546dcd99ecd",
-      "slug": "roxette-uk-the-tribute-show-evt-1546dcd99ecd"
+      "slug": "roxette-uk-the-tribute-show-evt-1546dcd99ecd",
+      "status": "pending_review"
     },
     {
       "date": "2026-10-30",
-      "time": "18:00",
+      "time": "19:00",
       "title": "Folianópolis 2026 — abertura",
       "venue": "Passarela Nego Quirido",
       "category": "Baladas",
-      "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
+      "source": "https://folianopolis.com.br/",
       "region": "Centro",
       "note": "Festival de 30/10 a 01/11; horários específicos sujeitos a confirmação.",
       "id": "evt-ebb62fc37d0b",
-      "slug": "folianopolis-2026-abertura-evt-ebb62fc37d0b"
+      "slug": "folianopolis-2026-abertura-evt-ebb62fc37d0b",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://folianopolis.com.br/",
+      "reviewMethod": "organizer_official_faq",
+      "reviewEvidenceDetails": "Site oficial: 30/10 portões 19h; 31/10 e 01/11 portões 18h; Passarela Nego Quirido."
     },
     {
       "date": "2026-10-31",
-      "time": "",
+      "time": "18:00",
       "title": "Folianópolis 2026 — segundo dia",
       "venue": "Passarela Nego Quirido",
       "category": "Baladas",
-      "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
+      "source": "https://folianopolis.com.br/",
       "region": "Centro",
       "note": "",
       "id": "evt-4a29531bb042",
-      "slug": "folianopolis-2026-segundo-dia-evt-4a29531bb042"
+      "slug": "folianopolis-2026-segundo-dia-evt-4a29531bb042",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://folianopolis.com.br/",
+      "reviewMethod": "organizer_official_faq",
+      "reviewEvidenceDetails": "Site oficial: 30/10 portões 19h; 31/10 e 01/11 portões 18h; Passarela Nego Quirido."
     },
     {
       "date": "2026-11-01",
-      "time": "",
+      "time": "18:00",
       "title": "Folianópolis 2026 — encerramento",
       "venue": "Passarela Nego Quirido",
       "category": "Baladas",
-      "source": "https://guiafloripa.com.br/agenda?cmbCategory=shows",
+      "source": "https://folianopolis.com.br/",
       "region": "Centro",
       "note": "",
       "id": "evt-252e05950d25",
-      "slug": "folianopolis-2026-encerramento-evt-252e05950d25"
+      "slug": "folianopolis-2026-encerramento-evt-252e05950d25",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://folianopolis.com.br/",
+      "reviewMethod": "organizer_official_faq",
+      "reviewEvidenceDetails": "Site oficial: 30/10 portões 19h; 31/10 e 01/11 portões 18h; Passarela Nego Quirido."
     },
     {
       "date": "2026-10-30",
@@ -574,11 +742,13 @@
       "title": "Abruna — pop, rock e R&B",
       "venue": "Delfino 146",
       "category": "Shows",
-      "source": "https://guiafloripa.com.br/agenda/Shows/",
+      "source": "https://guiafloripa.com.br/agenda/shows/cantora-abruna-apresenta-repertorio-de-pop-rock-e-rb-no-delfino-146.php",
       "region": "Centro",
-      "note": "Show previsto para 21h30; abertura da casa às 20h.",
+      "note": "Abertura 20h; apresentação 21h30 segundo guia individual; conferir com organizador antes de verificar.",
       "id": "evt-9980b1fd85a8",
-      "slug": "abruna-pop-rock-e-r-b-evt-9980b1fd85a8"
+      "slug": "abruna-pop-rock-e-r-b-evt-9980b1fd85a8",
+      "status": "pending_review",
+      "showTime": "21:30"
     },
     {
       "date": "2026-10-31",
@@ -590,7 +760,8 @@
       "region": "Agronômica",
       "note": "",
       "id": "evt-8eade7ba7bfe",
-      "slug": "halloween-skrotes-ossca-nosferatu-evt-8eade7ba7bfe"
+      "slug": "halloween-skrotes-ossca-nosferatu-evt-8eade7ba7bfe",
+      "status": "pending_review"
     },
     {
       "date": "2026-10-31",
@@ -602,7 +773,8 @@
       "region": "Florianópolis",
       "note": "",
       "id": "evt-32fc50b56d0e",
-      "slug": "halloween-com-blockbusters-evt-32fc50b56d0e"
+      "slug": "halloween-com-blockbusters-evt-32fc50b56d0e",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-01",
@@ -612,9 +784,10 @@
       "category": "Baladas",
       "source": "https://www.eventoon.com.br/cidade/florianopolis-sc",
       "region": "Jurerê",
-      "note": "",
+      "note": "Data e local constam na listagem Eventoon; horário não confirmado em fonte primária.",
       "id": "evt-e2c338dd3749",
-      "slug": "n-n-p-jessica-brankka-e-miss-natalia-evt-e2c338dd3749"
+      "slug": "n-n-p-jessica-brankka-e-miss-natalia-evt-e2c338dd3749",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-06",
@@ -624,10 +797,11 @@
       "category": "Shows",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "",
+      "note": "Fonte secundária sem comprovação individual; preservar quarentena.",
       "id": "evt-d13a03ca392e",
       "slug": "show-de-fresno-evt-d13a03ca392e",
-      "sourceReview": "quarantined"
+      "sourceReview": "quarantined",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-07",
@@ -637,10 +811,11 @@
       "category": "Festivais",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Entrada gratuita segundo a fonte.",
+      "note": "Entrada gratuita segundo a fonte. Fonte secundária sem comprovação individual; preservar quarentena.",
       "id": "evt-aad7b4c02ecb",
       "slug": "3o-festival-cultural-chines-de-sc-evt-aad7b4c02ecb",
-      "sourceReview": "quarantined"
+      "sourceReview": "quarantined",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-07",
@@ -650,10 +825,11 @@
       "category": "Festivais",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Evento em 7 e 8 de novembro.",
+      "note": "Evento em 7 e 8 de novembro. Fonte secundária sem comprovação individual; preservar quarentena.",
       "id": "evt-7ad7b0fc7589",
       "slug": "haru-matsuri-4a-edicao-evt-7ad7b0fc7589",
-      "sourceReview": "quarantined"
+      "sourceReview": "quarantined",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-13",
@@ -663,10 +839,11 @@
       "category": "Feiras",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Evento de 13 a 15 de novembro.",
+      "note": "Evento de 13 a 15 de novembro. Fonte secundária sem comprovação individual; preservar quarentena.",
       "id": "evt-fb254317e98a",
       "slug": "feira-de-ceramica-evt-fb254317e98a",
-      "sourceReview": "quarantined"
+      "sourceReview": "quarantined",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-13",
@@ -676,10 +853,11 @@
       "category": "Cultura",
       "source": "https://emfloripa.ia.br/agenda/",
       "region": "Florianópolis",
-      "note": "Evento de 13 a 15 de novembro.",
+      "note": "Evento de 13 a 15 de novembro. Fonte secundária sem comprovação individual; preservar quarentena.",
       "id": "evt-368fb60b6ca1",
       "slug": "ponte-de-palavras-encontro-literario-evt-368fb60b6ca1",
-      "sourceReview": "quarantined"
+      "sourceReview": "quarantined",
+      "status": "pending_review"
     },
     {
       "date": "2026-11-01",
@@ -691,7 +869,12 @@
       "region": "Centro",
       "note": "Data obtida na página individual do evento, na seção Detalhes.",
       "id": "evt-579a08463320",
-      "slug": "halloween-festa-a-fantasia-open-bar-evt-579a08463320"
+      "slug": "halloween-festa-a-fantasia-open-bar-evt-579a08463320",
+      "status": "verified",
+      "lastVerifiedAt": "2026-10-31",
+      "reviewEvidenceUrl": "https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/",
+      "reviewMethod": "venue_official_event_page",
+      "reviewEvidenceDetails": "Página individual da UNDR: 01/11, 23h às 05h, Alameda Adolfo Konder, 1007."
     }
   ]
 }

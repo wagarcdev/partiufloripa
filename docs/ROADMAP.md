@@ -39,3 +39,19 @@
 - [ ] Revisar editorialmente os 56 registros e as 12 imagens ainda usadas.
 - [ ] Validar direitos de imagem, horários ausentes, regiões genéricas e condições de uso da base Esri.
 - [ ] Validar no Android físico, além da emulação.
+
+## Checkpoint editorial — proposta em PR de 31/10/2026
+
+- [x] Revisar e classificar os 56 registros iniciais por evidência, com relatório individual em `reports/INITIAL-EDITORIAL-AUDIT-2026-10-31.md`.
+- [x] Preparar no branch: 29 registros conferidos (22 a partir de 31/10), 21 em análise, 6 em quarentena; corrigir abertura/show em 11 sessões do Floripa Comedy Club, título do evento Espartano 14/11 e horários oficiais do Folianópolis.
+- [x] Preparar no branch: lista/mapa limitados ao subconjunto conferido e não expirado; URLs pendentes continuam com `noindex` e sem CTA externo.
+- [x] Adicionar pipeline de testes em PR para evitar deploy sem validação.
+- [x] Testes técnicos e CI do PR aprovados com 29 registros tendo método, escopo e URL de evidência específica.
+- [x] Criada página de privacidade e canal público de correção/retirada via GitHub Issues (requer conta; não serve para dados privados).
+- [x] Atribuição do Light Gray Canvas atualizada para as fontes indicadas pela Esri.
+- [x] QA browser em PR concluído com Chromium em viewports 390×844 e 1440×900: agenda, filtros, mapa, capas, detalhe e página de privacidade. Capturas no [artefato GitHub](https://github.com/wagarcdev/partiufloripa/actions/runs/41175059280/artifacts/13032633304); inspeção visual das cinco capturas sem corte horizontal evidente ou mapa vazio. Não equivale a Android físico.
+- [ ] Verificar em aparelho Android físico e aceitar visualmente o conjunto antes de anunciar o beta.
+- [ ] Avaliar condições de uso dos tiles Esri para esta aplicação e eventual monetização; atribuição, sozinha, não equivale a autorização.
+- [ ] Definir contato reservado para solicitações sensíveis antes de ampliar o beta.
+- [ ] Validar distribuição de convite via link sem alegação de restrição técnica de acesso (GitHub Pages público).
+- [ ] Só após gates, integrar o PR e verificar Pages; não usar IA na operação, backend ou rotinas de coleta contínua.
