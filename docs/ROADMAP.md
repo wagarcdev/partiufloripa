@@ -39,3 +39,13 @@
 - [ ] Revisar editorialmente os 56 registros e as 12 imagens ainda usadas.
 - [ ] Validar direitos de imagem, horários ausentes, regiões genéricas e condições de uso da base Esri.
 - [ ] Validar no Android físico, além da emulação.
+
+## Checkpoint editorial — proposta em PR de 31/10/2026
+
+- [x] Revisar e classificar os 56 registros iniciais por evidência, com relatório individual em `reports/INITIAL-EDITORIAL-AUDIT-2026-10-31.md`.
+- [x] Preparar no branch: 29 registros conferidos (22 a partir de 31/10), 21 em análise, 6 em quarentena; corrigir abertura/show em 11 sessões do Floripa Comedy Club, título do evento Espartano 14/11 e horários oficiais do Folianópolis.
+- [x] Preparar no branch: lista/mapa limitados ao subconjunto conferido e não expirado; URLs pendentes continuam com `noindex` e sem CTA externo.
+- [x] Adicionar pipeline de testes em PR para evitar deploy sem validação.
+- [ ] Homologar CI do PR, QA visual real em Android e revisão das páginas de detalhe.
+- [ ] Contato/política de privacidade, revisão de uso dos tiles Esri e estratégia de convite sem falsa promessa de acesso privado.
+- [ ] Só após gates, integrar o PR e verificar Pages; não usar IA na operação, backend ou rotinas de coleta contínua.
