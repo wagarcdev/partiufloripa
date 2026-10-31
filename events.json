@@ -14,7 +14,9 @@
       "slug": "boiler-deck-37-evt-a35373c81ac5",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/111987/boiler-deck-37"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/111987/boiler-deck-37",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-10-30",
@@ -29,7 +31,9 @@
       "slug": "pop-hitz-evt-54c9de57c44b",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108694/pop-hitz"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108694/pop-hitz",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-10-31",
@@ -44,7 +48,9 @@
       "slug": "baila-evt-10d554498659",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108699/baila"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108699/baila",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-01",
@@ -59,7 +65,9 @@
       "slug": "hype-ed-especial-elite-evt-d39809f47b90",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110488/hype-ed-especial-elite"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110488/hype-ed-especial-elite",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-05",
@@ -74,7 +82,9 @@
       "slug": "inferninho-evt-7486ca6d39b6",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110916/inferninho"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110916/inferninho",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-06",
@@ -103,7 +113,9 @@
       "slug": "hype-evt-4ff37533bed9",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110927/hype"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110927/hype",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-12",
@@ -118,7 +130,9 @@
       "slug": "balance-evt-a8db01615de1",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110917/balance"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/nomenalista/110917/balance",
+      "reviewMethod": "organizer_ticket_guestlist",
+      "reviewEvidenceDetails": "Página específica de lista de presença do evento: BALANCE em 12/11, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-13",
@@ -133,7 +147,9 @@
       "slug": "baile-do-olimpo-evt-82ff8748a60e",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110921/baile-do-olimpo"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110921/baile-do-olimpo",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-14",
@@ -149,7 +165,9 @@
       "slug": "na-onda-convida-atracao-a-confirmar-evt-362d49fca53d",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108084/backwash-2016-vs-2026"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108084/backwash-2016-vs-2026",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-20",
@@ -164,7 +182,9 @@
       "slug": "hype-evt-7495d9df5930",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110922/hype"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110922/hype",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-21",
@@ -179,7 +199,9 @@
       "slug": "dj-vs-deck-evt-4e523a3e1344",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110924/dj-vs-deck"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110924/dj-vs-deck",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-26",
@@ -194,7 +216,9 @@
       "slug": "close-friends-evt-d1212145d4ed",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110919/close-friends"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110919/close-friends",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-27",
@@ -209,7 +233,9 @@
       "slug": "baile-do-olimpo-evt-824adfa07292",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110923/baile-do-olimpo"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110923/baile-do-olimpo",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-11-28",
@@ -224,7 +250,9 @@
       "slug": "pop-hitz-evt-b8f5589b5bf2",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110925/pop-hitz"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110925/pop-hitz",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: título, data, abertura 21h, Bar do Espartano, Lagoa da Conceição."
     },
     {
       "date": "2026-10-27",
@@ -241,7 +269,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/108712/brow-malaquias-e-felipe-pansolin-os-folgados-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-28",
@@ -258,7 +288,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109308/lua-lima-devaneios-de-um-manezinho-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-29",
@@ -275,7 +307,9 @@
       "showTime": "21:00",
       "lastVerifiedAt": "2026-10-31",
       "status": "verified",
-      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h"
+      "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-30",
@@ -292,7 +326,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107476/fabio-guere-panico-inutilidade-publica-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-10-31",
@@ -309,7 +345,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/107477/cicero-viana-aqui-tem-preparo-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-01",
@@ -326,7 +364,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109171/nathi-gaiteira-amor-humor-e-modao-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-03",
@@ -343,7 +383,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/110727/humor-huana-reducao-de-danos-com-bob-rodrigues-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-04",
@@ -360,7 +402,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109494/arianna-nutt-de-repente-40-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-05",
@@ -377,7 +421,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/111512/festival-open-mic-o-melhor-voce-escolhe-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-06",
@@ -394,7 +440,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/109496/irineu-nicoletti-meio-tanso-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-07",
@@ -411,7 +459,9 @@
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
       "reviewEvidenceUrl": "https://www.pensanoevento.com.br/eventos/105680/marcio-donato-4-amigos-21h",
-      "showTime": "21:00"
+      "showTime": "21:00",
+      "reviewMethod": "organizer_ticket_event_page",
+      "reviewEvidenceDetails": "Página individual de bilheteria: data, abertura 19h, espetáculo 21h, Floripa Comedy Club, Saco Grande."
     },
     {
       "date": "2026-11-13",
@@ -648,7 +698,9 @@
       "slug": "folianopolis-2026-abertura-evt-ebb62fc37d0b",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://folianopolis.com.br/"
+      "reviewEvidenceUrl": "https://folianopolis.com.br/",
+      "reviewMethod": "organizer_official_faq",
+      "reviewEvidenceDetails": "Site oficial: 30/10 portões 19h; 31/10 e 01/11 portões 18h; Passarela Nego Quirido."
     },
     {
       "date": "2026-10-31",
@@ -663,7 +715,9 @@
       "slug": "folianopolis-2026-segundo-dia-evt-4a29531bb042",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://folianopolis.com.br/"
+      "reviewEvidenceUrl": "https://folianopolis.com.br/",
+      "reviewMethod": "organizer_official_faq",
+      "reviewEvidenceDetails": "Site oficial: 30/10 portões 19h; 31/10 e 01/11 portões 18h; Passarela Nego Quirido."
     },
     {
       "date": "2026-11-01",
@@ -678,7 +732,9 @@
       "slug": "folianopolis-2026-encerramento-evt-252e05950d25",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://folianopolis.com.br/"
+      "reviewEvidenceUrl": "https://folianopolis.com.br/",
+      "reviewMethod": "organizer_official_faq",
+      "reviewEvidenceDetails": "Site oficial: 30/10 portões 19h; 31/10 e 01/11 portões 18h; Passarela Nego Quirido."
     },
     {
       "date": "2026-10-30",
@@ -816,7 +872,9 @@
       "slug": "halloween-festa-a-fantasia-open-bar-evt-579a08463320",
       "status": "verified",
       "lastVerifiedAt": "2026-10-31",
-      "reviewEvidenceUrl": "https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/"
+      "reviewEvidenceUrl": "https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/",
+      "reviewMethod": "venue_official_event_page",
+      "reviewEvidenceDetails": "Página individual da UNDR: 01/11, 23h às 05h, Alameda Adolfo Konder, 1007."
     }
   ]
 }
