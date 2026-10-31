@@ -46,6 +46,11 @@
 - [x] Preparar no branch: 29 registros conferidos (22 a partir de 31/10), 21 em análise, 6 em quarentena; corrigir abertura/show em 11 sessões do Floripa Comedy Club, título do evento Espartano 14/11 e horários oficiais do Folianópolis.
 - [x] Preparar no branch: lista/mapa limitados ao subconjunto conferido e não expirado; URLs pendentes continuam com `noindex` e sem CTA externo.
 - [x] Adicionar pipeline de testes em PR para evitar deploy sem validação.
-- [ ] Homologar CI do PR, QA visual real em Android e revisão das páginas de detalhe.
-- [ ] Contato/política de privacidade, revisão de uso dos tiles Esri e estratégia de convite sem falsa promessa de acesso privado.
+- [x] Testes técnicos e CI do PR aprovados com 29 registros tendo método, escopo e URL de evidência específica.
+- [x] Criada página de privacidade e canal público de correção/retirada via GitHub Issues (requer conta; não serve para dados privados).
+- [x] Atribuição do Light Gray Canvas atualizada para as fontes indicadas pela Esri.
+- [ ] QA visual e funcional no Android e desktop para a versão do PR; revisar navegação, filtros, cards, mapa e avisos.
+- [ ] Avaliar condições de uso dos tiles Esri para esta aplicação e eventual monetização; atribuição, sozinha, não equivale a autorização.
+- [ ] Definir contato reservado para solicitações sensíveis antes de ampliar o beta.
+- [ ] Validar distribuição de convite via link sem alegação de restrição técnica de acesso (GitHub Pages público).
 - [ ] Só após gates, integrar o PR e verificar Pages; não usar IA na operação, backend ou rotinas de coleta contínua.
