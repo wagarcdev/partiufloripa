@@ -127,7 +127,7 @@ function show(e){
  (e.showTime?'<div class="time"><span>Início da atração</span><strong>'+esc(e.showTime)+'</strong></div>':"");
  const venueHtml='<div class="location"><div class="kicker">Onde acontece</div><strong>'+esc(validLocation?e.venue:"Local a confirmar")+'</strong><small>'+esc(validRegion?e.region:"Bairro a confirmar")+' · Florianópolis</small></div>';
  const ticketHtml=e.price?'<div class="secondary"><span class="label">Ingressos / valores informados</span><strong>'+esc(e.price)+'</strong></div>':"";
- const source=sourceUrl&&!quarantined?'<a class="cta" href="'+esc(sourceUrl)+'" target="_blank" rel="noopener noreferrer">Conferir informações ↗</a>':'';
+ const source=sourceUrl&&reviewed&&!quarantined?'<a class="cta" href="'+esc(sourceUrl)+'" target="_blank" rel="noopener noreferrer">Conferir informações ↗</a>':'';
  const more=e.note?'<p class="note">'+esc(e.note)+'</p>':"";
  detail.innerHTML='<section class="hero" aria-labelledby="event-title"><div class="overline">PartiuFloripa / '+esc(e.category||"Eventos")+'</div><h1 id="event-title">'+esc(e.title)+'</h1><div class="hero-bottom"><div><div class="kicker">'+esc(e.category||"Evento")+' · Florianópolis</div><strong>'+esc(shortDate)+'</strong></div><div class="hero-art"><img class="hero-thumbnail" src="'+esc(visual.file)+'" alt="Foto ilustrativa ou de arquivo" loading="eager"><span class="number" aria-hidden="true">'+esc(e.date.slice(8,10))+'</span></div></div></section>'+
  '<div class="content"><section aria-labelledby="info-heading"><div class="kicker">Informações do evento</div><h2 id="info-heading">O que você precisa saber</h2>'+timeRows+venueHtml+ticketHtml+more+'</section>'+
