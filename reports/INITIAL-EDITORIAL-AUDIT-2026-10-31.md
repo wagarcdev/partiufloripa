@@ -102,3 +102,46 @@ Somente `status=verified`, URL HTTPS, data não passada e fonte não quarantined
 2. Reavaliar manualmente os 27 pendentes somente quando houver URLs ou horários oficiais; não exigir aprovação de catálogo inteiro para beta.
 3. Resolver privacidade/contato, validação mobile e comportamento da navegação antes de convidar beta testers.
 4. Revisão eventual e script gratuito sob demanda; **sem agendamento contínuo** até existir necessidade comprovada.
+
+
+## Retificação de qualidade — conferência específica em 31/10/2026
+
+Uma primeira triagem havia marcado 29 eventos `verified` antes de documentar evidência específica por ocorrência. Após contestação, o PR foi convertido em **draft** e os registros marcados passaram por nova consulta a páginas específicas de bilheteria, listas de presença do próprio evento e FAQ da produção. O campo `reviewEvidenceUrl` e os novos campos `reviewMethod`/`reviewEvidenceDetails` estão associados a cada ocorrência, e o validador do site recusa eventos `verified` sem esses campos. **Uma URL não substitui a leitura de conteúdo, nem um teste técnico garante realização futura.**
+
+A fonte de BALANCE em 12/11 foi atualizada para a página individual da **lista de presença**, já que a abertura HTML da página de ingressos falhou. Para o Folianópolis, as três datas e horários de portões estão no FAQ oficial; para UNDR, os detalhes de 01/11 constam na parte inferior da página. Os eventos originados de guias gerais continuam pendentes, mesmo se suas datas forem plausíveis. Recriações do site em ambiente local continuam exigindo QA visual.
+
+### Evidências campo a campo dos 29 registros
+
+| Data | Evento | Abertura | Início da atração | Método | Fonte específica |
+|---|---|---|---|---|---|
+| 2026-10-29 | BOILER DECK #37 | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/111987/boiler-deck-37) |
+| 2026-10-30 | POP HITZ | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/108694/pop-hitz) |
+| 2026-10-31 | BAILA | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/108699/baila) |
+| 2026-11-01 | HYPE — Ed. Especial Elite | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110488/hype-ed-especial-elite) |
+| 2026-11-05 | INFERNINHO | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110916/inferninho) |
+| 2026-11-07 | HYPE | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110927/hype) |
+| 2026-11-12 | BALANCE | 21:00 | — | organizer_ticket_guestlist | [ver evidência](https://www.pensanoevento.com.br/nomenalista/110917/balance) |
+| 2026-11-13 | BAILE DO OLIMPO | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110921/baile-do-olimpo) |
+| 2026-11-14 | BACKWASH: 2016 vs 2026 | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/108084/backwash-2016-vs-2026) |
+| 2026-11-20 | HYPE | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110922/hype) |
+| 2026-11-21 | DJ vs DECK | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110924/dj-vs-deck) |
+| 2026-11-26 | CLOSE FRIENDS | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110919/close-friends) |
+| 2026-11-27 | BAILE DO OLIMPO | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110923/baile-do-olimpo) |
+| 2026-11-28 | POP HITZ | 21:00 | — | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110925/pop-hitz) |
+| 2026-10-27 | Brow Malaquias e Felipe Pansolin — Os Folgados | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/108712/brow-malaquias-e-felipe-pansolin-os-folgados-21h) |
+| 2026-10-28 | Luã Lima — Devaneios de um Manezinho | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/109308/lua-lima-devaneios-de-um-manezinho-21h) |
+| 2026-10-29 | Daniel Duncan | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/107475/daniel-duncan-21h) |
+| 2026-10-30 | Fábio Güere — Inutilidade Pública | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/107476/fabio-guere-panico-inutilidade-publica-21h) |
+| 2026-10-31 | Cícero Viana — Aqui Tem Preparo! | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/107477/cicero-viana-aqui-tem-preparo-21h) |
+| 2026-11-01 | Nathi Gaiteira — Amor, Humor e Modão | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/109171/nathi-gaiteira-amor-humor-e-modao-21h) |
+| 2026-11-03 | Humor & Huana — Bob Rodrigues | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/110727/humor-huana-reducao-de-danos-com-bob-rodrigues-21h) |
+| 2026-11-04 | Arianna Nutt — De Repente 40 | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/109494/arianna-nutt-de-repente-40-21h) |
+| 2026-11-05 | Festival Open Mic | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/111512/festival-open-mic-o-melhor-voce-escolhe-21h) |
+| 2026-11-06 | Irineu Nicoletti — Meio Tanso | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/109496/irineu-nicoletti-meio-tanso-21h) |
+| 2026-11-07 | Marcio Donato (4 Amigos) | 19:00 | 21:00 | organizer_ticket_event_page | [ver evidência](https://www.pensanoevento.com.br/eventos/105680/marcio-donato-4-amigos-21h) |
+| 2026-10-30 | Folianópolis 2026 — abertura | 19:00 | — | organizer_official_faq | [ver evidência](https://folianopolis.com.br/) |
+| 2026-10-31 | Folianópolis 2026 — segundo dia | 18:00 | — | organizer_official_faq | [ver evidência](https://folianopolis.com.br/) |
+| 2026-11-01 | Folianópolis 2026 — encerramento | 18:00 | — | organizer_official_faq | [ver evidência](https://folianopolis.com.br/) |
+| 2026-11-01 | Halloween — Festa à Fantasia (Open Bar) | 23:00 | — | venue_official_event_page | [ver evidência](https://undr.com.br/eventos/halloween-festa-a-fantasia-open-bar-2/) |
+
+Verificações realizadas com dados públicos das fontes; nenhuma imagem de divulgação, direito de coleta automatizada ou promessa de ausência de cancelamento foi inferida.
